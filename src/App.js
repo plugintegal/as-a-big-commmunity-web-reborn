@@ -1,24 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
-
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <section class="text-gray-600 body-font">
+      <div class="container px-5 py-24 mx-auto">
+        <div class="flex flex-col text-center w-full mb-20">
+          <h2 class="text-2xl text-indigo-500 tracking-widest font-medium title-font mb-1">
+            React Tailwind and Redux
+          </h2>
+          <h1 class="text-xs text-gray-900">
+            <a href="https://github.com/dhiyo7/Starterpack-React-Tailwind-Redux">
+              {" "}
+              to see the repo
+            </a>
+          </h1>
+        </div>
+      </div>
+    </section>
   );
 }
 
