@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import Blog from "../components/Blog";
-import Event from "../components/Event";
-import Microblog from "../components/Microblog";
-import Hero from "../parts/Hero";
-import Navbar from "../parts/Navbar";
+import Blog from "../components/home/Blog";
+import Event from "../components/home/Event";
+import Microblog from "../components/home/Microblog";
+import Hero from "../components/home/Hero";
+import Navbar from "../components/Navbar";
 
 export default class Home extends Component {
   render() {
