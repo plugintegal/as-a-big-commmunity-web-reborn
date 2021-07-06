@@ -1,13 +1,13 @@
 import React, { Component } from "react";
-import Allevent from "../components/Allevent";
 import Navbar from "../parts/Navbar";
+import AllEventList from "../components/AllEventList";
 
-export default class Event extends Component {
+export default class EventList extends Component {
   render() {
     return (
       <div>
         <Navbar />
-        <Allevent />
+        <AllEventList />
       </div>
     );
   }
