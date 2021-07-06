@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import AlleventGrid from "../components/AlleventGrid";
-import Navbar from "../parts/Navbar";
+import Navbar from "../components/Navbar";
 
 export default class Event extends Component {
   render() {

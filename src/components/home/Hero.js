@@ -16,7 +16,7 @@ export default class Hero extends Component {
                 <p className="mr-12 hover:text-gray-900">Unity</p>
                 <p className="mr-12 hover:text-gray-900">Global</p>
                 <p className="mr-12 hover:text-gray-900">Inovate</p>
-                <p className="mr-12 hover:text-gray-900">Nationality</p>
+                <p className="hover:text-gray-900">Nationality</p>
               </nav>
               <p className="mb-8 leading-relaxed text-3xl">
                 komunitas linux dan pengembangan aplikasi di Politeknik Harapan

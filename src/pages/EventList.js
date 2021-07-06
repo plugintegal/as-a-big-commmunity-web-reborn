@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Navbar from "../parts/Navbar";
+import Navbar from "../components/Navbar";
 import AllEventList from "../components/AllEventList";
 
 export default class EventList extends Component {
