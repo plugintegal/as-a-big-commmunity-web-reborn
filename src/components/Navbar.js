@@ -20,7 +20,7 @@ export default class Navbar extends Component {
               <p className="mr-5 hover:text-gray-900">WiyataOs</p>
               <p className="mr-5 hover:text-gray-900">Blog</p>
               <p className="mr-5 hover:text-gray-900">Event</p>
-              <p className="mr-5 hover:text-gray-900">Achivment</p>
+              <p className=" hover:text-gray-900">Achivment</p>
             </nav>
           </div>
         </header>

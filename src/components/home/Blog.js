@@ -10,7 +10,7 @@ export default class Blog extends Component {
               <h4 className="font-bold text-3xl">Blog</h4>
             </div>
             <div className="flex flex-wrap mb-5">
-              <div className="">
+              <div className="p-1">
                 <div className="h-full flex sm:flex-row flex-col sm:justify-start justify-center text-center sm:text-left">
                   <div className="flex-grow sm:pl-8">
                     <h2 className="title-font font-semibold mb-2 text-gray-900 text-2xl">

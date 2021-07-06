@@ -128,7 +128,7 @@ export default class Event extends Component {
                   bermanfaat dan tentunya pengalaman
                 </p>
                 <div class="p-2 w-full mt-5">
-                  <Link to="/event">
+                  <Link to="/eventgrid">
                     <button class="flex  text-white bg-indigo-500 border-0 py-1 px-8 focus:outline-none hover:bg-indigo-600 rounded-full text-lg">
                       Lihat Semua Event
                     </button>
