@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 export default class Hero extends Component {
   render() {
@@ -81,20 +82,22 @@ export default class Hero extends Component {
           <div className="container px-5 py-6 mx-auto flex flex-wrap">
             <div className="flex flex-wrap -m-4">
               <div className="p-4 lg:w-1/2 md:w-full">
-                <div className="flex p-8 sm:flex-row flex-col">
-                  <div className="w-30 h-30 sm:mr-8 sm:mb-0 mb-4 inline-flex items-center justify-center">
-                    <img src="/assets/img/web.png" alt="" />
+                <Link to="about-squad">
+                  <div className="flex p-8 sm:flex-row flex-col">
+                    <div className="w-30 h-30 sm:mr-8 sm:mb-0 mb-4 inline-flex items-center justify-center">
+                      <img src="/assets/img/web.png" alt="" />
+                    </div>
+                    <div className="flex-grow">
+                      <h2 className="text-gray-900 text-lg title-font font-medium mb-3">
+                        Squad Web Dev
+                      </h2>
+                      <p className="leading-relaxed text-base">
+                        Blue bottle crucifix vinyl post-ironic four dollar toast
+                        vegan taxidermy. Gastropub indxgo juice poutine.
+                      </p>
+                    </div>
                   </div>
-                  <div className="flex-grow">
-                    <h2 className="text-gray-900 text-lg title-font font-medium mb-3">
-                      Squad Web Dev
-                    </h2>
-                    <p className="leading-relaxed text-base">
-                      Blue bottle crucifix vinyl post-ironic four dollar toast
-                      vegan taxidermy. Gastropub indxgo juice poutine.
-                    </p>
-                  </div>
-                </div>
+                </Link>
               </div>
               <div className="p-4 lg:w-1/2 md:w-full">
                 <div className="flex p-8 sm:flex-row flex-col">

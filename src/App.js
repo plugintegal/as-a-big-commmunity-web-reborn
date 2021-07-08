@@ -1,4 +1,7 @@
 import { BrowserRouter as Router, Route } from "react-router-dom";
+import AboutSquad from "./pages/AboutSquad";
+import Blog from "./pages/Blog";
+import DetailEvents from "./pages/DetailEvents";
 
 import Event from "./pages/EventGrid";
 import EventList from "./pages/EventList";
@@ -10,6 +13,9 @@ function App() {
   return (
     <Router>
       <Route path="/" exact component={Home} />
+      <Route path="/blog" exact component={Blog} />
+      <Route path="/detail-event" exact component={DetailEvents} />
+      <Route path="/about-squad" exact component={AboutSquad} />
 
       <Route path="/eventgrid" exact component={Event} />
       <Route path="/eventlist" exact component={EventList} />
