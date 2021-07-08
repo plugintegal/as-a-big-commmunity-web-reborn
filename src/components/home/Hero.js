@@ -35,6 +35,37 @@ export default class Hero extends Component {
         </section>
 
         <section className="text-gray-600 body-font">
+          <div className="container mx-auto flex py-24 md:flex-row flex-col items-center">
+            <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+              <img
+                className="object-cover object-center rounded -ml-16"
+                alt="hero"
+                src="/assets/img/tentang.png"
+              />
+            </div>
+            <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+              <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
+                Tentang Plugin
+              </h1>
+              <p className="mb-8 text-2xl ">
+                <span className="font-bold">PLUGIN</span> adalah suatu
+                organisasi atau komunitas studi linux dan pengembangan aplikasi
+                di Politeknik Harapan Bersama Tegal. Kami mempunyai tujuan untuk
+                mengenalkan dan mengOpen Source kan mahasiswa dan masyarakat
+                umum dengan berbagai kegiatan yang nantinya bisa membuka wawasan
+                serta mindset OpenSource guna untuk mengurangi angka pembajakan
+                Software di Indonesia
+              </p>
+              <div className="flex justify-center">
+                <button className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none rounded-3xl ml-56 hover:bg-indigo-600  text-lg">
+                  Lihat Selengkapnya
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="text-gray-600 body-font">
           <div className="container px-5 mx-auto py-10">
             <div className="flex flex-col text-center w-full mb-5">
               <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">
