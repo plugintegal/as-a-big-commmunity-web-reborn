@@ -4,7 +4,7 @@ export default class DetailEvent extends Component {
     render() {
         return (
             <div>
-                <section class="body-font">
+                <section class="body-font pt-36 sm:pt-28 md:pt-24 lg:pt-24">
                     <section className="text-gray-600 body-font">
                         <div className="container px-5 mx-auto pt-10">
                             <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">
