@@ -8,6 +8,7 @@ import EventList from "./pages/EventList";
 
 import Home from "./pages/Home";
 import Login from "./pages/Login";
+import RegistrationEvent from "./pages/RegistrationEvent";
 import RegistrationMember from "./pages/RegistrationMember";
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
       <Route path="/detail-event" exact component={DetailEvents} />
       <Route path="/about-squad" exact component={AboutSquad} />
       <Route path="/registration-member" exact component={RegistrationMember} />
+      <Route path="/registration-event" exact component={RegistrationEvent} />
 
       <Route path="/eventgrid" exact component={Event} />
       <Route path="/eventlist" exact component={EventList} />
