@@ -8,6 +8,7 @@ import EventList from "./pages/EventList";
 
 import Home from "./pages/Home";
 import Login from "./pages/Login";
+import RegistrationMember from "./pages/RegistrationMember";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Route path="/blog" exact component={Blog} />
       <Route path="/detail-event" exact component={DetailEvents} />
       <Route path="/about-squad" exact component={AboutSquad} />
+      <Route path="/registration-member" exact component={RegistrationMember} />
 
       <Route path="/eventgrid" exact component={Event} />
       <Route path="/eventlist" exact component={EventList} />

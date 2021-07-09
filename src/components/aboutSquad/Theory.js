@@ -37,7 +37,7 @@ export default class Theory extends Component {
                                     <a
                                         className={
                                             "text-xs font-bold uppercase my-1 px-1 py-1 sm:px-3 sm:py-2 md:px-5 md:py-3 lg:px-0-5 lg:py-3 shadow-lg rounded-xl block leading-normal " +
-                                            (this.state.openTab == 1
+                                            (this.state.openTab === 1
                                                 ? "text-white bg-blue-400"
                                                 : "text-blue-400 bg-white")
                                         }
@@ -56,7 +56,7 @@ export default class Theory extends Component {
                                     <a
                                         className={
                                             "text-xs font-bold uppercase my-1 px-1 py-1 sm:px-3 sm:py-2 md:px-5 md:py-3 lg:px-0-5 lg:py-3 shadow-lg rounded-xl block leading-normal " +
-                                            (this.state.openTab == 2
+                                            (this.state.openTab === 2
                                                 ? "text-white bg-blue-400"
                                                 : "text-blue-400 bg-white")
                                         }
@@ -75,7 +75,7 @@ export default class Theory extends Component {
                                     <a
                                         className={
                                             "text-xs font-bold uppercase my-1 px-1 py-1 sm:px-3 sm:py-2 md:px-5 md:py-3 lg:px-0-5 lg:py-3 shadow-lg rounded-xl block leading-normal " +
-                                            (this.state.openTab == 3
+                                            (this.state.openTab === 3
                                                 ? "text-white bg-blue-400"
                                                 : "text-blue-400 bg-white")
                                         }

@@ -4,7 +4,7 @@ export default class AllBlog extends Component {
     render() {
         return (
             <div>
-                <section className="text-gray-600 body-font">
+                <section className="text-gray-600 body-font pt-36 sm:pt-28 md:pt-24 lg:pt-24">
                     <div className="container flex mx-auto px-5 py-5 md:flex-row flex-col justify-end">
                         <div className="lg:flex-grow md:w-1/2 flex-col md:text-left mb-4 lg:mb-16 md:mb-0 sm:mb-16 items-center text-center">
                             <h1 className="title-font sm:text-4xl text-3xl font-bold text-gray-900">Blog</h1>
