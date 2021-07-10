@@ -1,6 +1,6 @@
 import React from "react";
 import { useSelector } from "react-redux";
-import { withRouter, useHistory } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import moment from "moment";
 
 const AllEventGrid = () => {

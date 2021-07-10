@@ -1,37 +1,26 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import {FiMenu, FiGrid} from 'react-icons/fi';
 
 export default class NavbarSort extends Component {
   constructor(props){
     super(props)
   }
   render() {
+    console.log(this.props)
     return (
       <>
         <div className="md:w-3/4 border-2 h-15 rounded inline-flex">
-          <div className="content-center flex flex-wrap">
+          <div className="content-center flex flex-wrap items-center">
             <Link onClick={() => this.props.handleChangeTabEventGrid()}>
-              <img
-                src="/assets/img/sort.png"
-                className="w-5 h-5 ml-3"
-                alt="grid"
-              />
+              <FiGrid className={(this.props.tabEventGrid ? "text-blue-400 " : " ") + " text-3xl ml-3 hover:text-blue-500"}/>
             </Link>
             <Link onClick={() => this.props.handleChangeTabEventList()}>
-              <img
-                src="/assets/img/list.png"
-                className="w-6 h-5 ml-5 mr-32"
-                alt="list"
-              />
+              <FiMenu className={(this.props.tabEventList ? "text-blue-400 " : " ") + " text-4xl ml-2 hover:text-blue-500"}/>
             </Link>
           </div>
-          <div className="ml-auto content-center flex flex-wrap">
-            <p className="ml-96 ">
-              Urut <br /> <span>Berdasarkan</span>{" "}
-            </p>
-          </div>
           <div className="p-2 ml-auto">
-            <div className="relative inline-block text-left ml-auto">
+            <div className="relative w-60 inline-block text-left ml-auto">
               <div>
                 <button
                   type="button"
@@ -40,7 +29,7 @@ export default class NavbarSort extends Component {
                   aria-expanded="true"
                   aria-haspopup="true"
                 >
-                  Event Yang Akan Datang
+                  Urut Berdasarkan
                   {/* Heroicon name: solid/chevron-down */}
                   <svg
                     className="-mr-1 ml-2 h-5 w-5"
