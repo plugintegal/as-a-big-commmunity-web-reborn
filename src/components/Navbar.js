@@ -20,7 +20,7 @@ export default class Navbar extends Component {
             <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
               <p className="mr-5 hover:text-gray-900">WiyataOs</p>
               <p className="mr-5 hover:text-gray-900">Blog</p>
-              <p className="mr-5 hover:text-gray-900">Event</p>
+              <Link to="/event" className="mr-5 hover:text-gray-900">Event</Link>
               <p className="mr-5 hover:text-gray-900">Achivment</p>
               <Link to="/registration-member" className=" hover:text-gray-900">Registration Member</Link>
             </nav>
