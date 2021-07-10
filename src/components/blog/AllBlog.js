@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import {Link} from 'react-router-dom'
 
 export default class AllBlog extends Component {
     render() {
@@ -30,9 +31,9 @@ export default class AllBlog extends Component {
                                             <h2 class="text-gray-900 text-sm font-semibold inline-block">Plugin Medium</h2>
                                         </div>
                                     </div>
-                                    <a className="block relative h-48 rounded overflow-hidden">
+                                    <Link to="" className="block relative h-48 rounded overflow-hidden">
                                         <img alt="ecommerce" className="object-cover object-center w-full h-full block rounded" src="/assets/img/ig1.png" />
-                                    </a>
+                                    </Link>
                                     <div className="mt-3">
                                         <h3 className="py-3 font-bold tracking-widest title-font">Nec enim magna nunc libero est ultrices</h3>
                                         <p className="pb-3 text-gray-700 text-xs tracking-widest mb-1">Interdum ullamcorper fames ultrices ipsum gravida quam netus, fames ultrices ipsum gravida</p>
@@ -47,9 +48,9 @@ export default class AllBlog extends Component {
                                             <h2 class="text-gray-900 text-sm font-semibold inline-block">Plugin Medium</h2>
                                         </div>
                                     </div>
-                                    <a className="block relative h-48 rounded overflow-hidden">
+                                    <Link to="" className="block relative h-48 rounded overflow-hidden">
                                         <img alt="ecommerce" className="object-cover object-center w-full h-full block rounded" src="/assets/img/ig1.png" />
-                                    </a>
+                                    </Link>
                                     <div className="mt-3">
                                         <h3 className="py-3 font-bold tracking-widest title-font">Nec enim magna nunc libero est ultrices</h3>
                                         <p className="pb-3 text-gray-700 text-xs tracking-widest mb-1">Interdum ullamcorper fames ultrices ipsum gravida quam netus, fames ultrices ipsum gravida</p>
@@ -64,9 +65,9 @@ export default class AllBlog extends Component {
                                             <h2 class="text-gray-900 text-sm font-semibold inline-block">Plugin Medium</h2>
                                         </div>
                                     </div>
-                                    <a className="block relative h-48 rounded overflow-hidden">
+                                    <Link to="" className="block relative h-48 rounded overflow-hidden">
                                         <img alt="ecommerce" className="object-cover object-center w-full h-full block rounded" src="/assets/img/ig1.png" />
-                                    </a>
+                                    </Link>
                                     <div className="mt-3">
                                         <h3 className="py-3 font-bold tracking-widest title-font">Nec enim magna nunc libero est ultrices</h3>
                                         <p className="pb-3 text-gray-700 text-xs tracking-widest mb-1">Interdum ullamcorper fames ultrices ipsum gravida quam netus, fames ultrices ipsum gravida</p>
@@ -81,9 +82,9 @@ export default class AllBlog extends Component {
                                             <h2 class="text-gray-900 text-sm font-semibold inline-block">Plugin Medium</h2>
                                         </div>
                                     </div>
-                                    <a className="block relative h-48 rounded overflow-hidden">
+                                    <Link to="" className="block relative h-48 rounded overflow-hidden">
                                         <img alt="ecommerce" className="object-cover object-center w-full h-full block rounded" src="/assets/img/ig1.png" />
-                                    </a>
+                                    </Link>
                                     <div className="mt-3">
                                         <h3 className="py-3 font-bold tracking-widest title-font">Nec enim magna nunc libero est ultrices</h3>
                                         <p className="pb-3 text-gray-700 text-xs tracking-widest mb-1">Interdum ullamcorper fames ultrices ipsum gravida quam netus, fames ultrices ipsum gravida</p>
@@ -98,9 +99,9 @@ export default class AllBlog extends Component {
                                             <h2 class="text-gray-900 text-sm font-semibold inline-block">Plugin Medium</h2>
                                         </div>
                                     </div>
-                                    <a className="block relative h-48 rounded overflow-hidden">
+                                    <Link to="" className="block relative h-48 rounded overflow-hidden">
                                         <img alt="ecommerce" className="object-cover object-center w-full h-full block rounded" src="/assets/img/ig1.png" />
-                                    </a>
+                                    </Link>
                                     <div className="mt-3">
                                         <h3 className="py-3 font-bold tracking-widest title-font">Nec enim magna nunc libero est ultrices</h3>
                                         <p className="pb-3 text-gray-700 text-xs tracking-widest mb-1">Interdum ullamcorper fames ultrices ipsum gravida quam netus, fames ultrices ipsum gravida</p>
@@ -115,9 +116,9 @@ export default class AllBlog extends Component {
                                             <h2 class="text-gray-900 text-sm font-semibold inline-block">Plugin Medium</h2>
                                         </div>
                                     </div>
-                                    <a className="block relative h-48 rounded overflow-hidden">
+                                    <Link to="" className="block relative h-48 rounded overflow-hidden">
                                         <img alt="ecommerce" className="object-cover object-center w-full h-full block rounded" src="/assets/img/ig1.png" />
-                                    </a>
+                                    </Link>
                                     <div className="mt-3">
                                         <h3 className="py-3 font-bold tracking-widest title-font">Nec enim magna nunc libero est ultrices</h3>
                                         <p className="pb-3 text-gray-700 text-xs tracking-widest mb-1">Interdum ullamcorper fames ultrices ipsum gravida quam netus, fames ultrices ipsum gravida</p>
