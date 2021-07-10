@@ -2,19 +2,22 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 
 export default class NavbarSort extends Component {
+  constructor(props){
+    super(props)
+  }
   render() {
     return (
       <>
         <div className="md:w-3/4 border-2 h-15 rounded inline-flex">
           <div className="content-center flex flex-wrap">
-            <Link to="/eventgrid">
+            <Link onClick={() => this.props.handleChangeTabEventGrid()}>
               <img
                 src="/assets/img/sort.png"
                 className="w-5 h-5 ml-3"
                 alt="grid"
               />
             </Link>
-            <Link to="eventlist">
+            <Link onClick={() => this.props.handleChangeTabEventList()}>
               <img
                 src="/assets/img/list.png"
                 className="w-6 h-5 ml-5 mr-32"

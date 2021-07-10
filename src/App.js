@@ -3,7 +3,8 @@ import AboutSquad from "./pages/AboutSquad";
 import Blog from "./pages/Blog";
 import DetailEvents from "./pages/DetailEvents";
 
-import Event from "./pages/EventGrid";
+import Event from './pages/Event';
+import EventGrid from "./pages/EventGrid";
 import EventList from "./pages/EventList";
 
 import Home from "./pages/Home";
@@ -23,7 +24,8 @@ function App() {
       <Route path="/registration-event" exact component={RegistrationEvent} />
       <Route path="/payment-event" exact component={PaymentEvent} />
 
-      <Route path="/eventgrid" exact component={Event} />
+      <Route path="/event" exact component={Event} />
+      <Route path="/eventgrid" exact component={EventGrid} />
       <Route path="/eventlist" exact component={EventList} />
       <Route path="/login" exact component={Login} />
     </Router>
