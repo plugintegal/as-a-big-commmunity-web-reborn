@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
 
 export default class Mentor extends Component {
     render() {
@@ -8,9 +7,9 @@ export default class Mentor extends Component {
                 <section className="text-gray-600 body-font container mx-auto flex px-5 py-5 md:flex-row flex-col items-center">
                     <h1 className="text-xl font-bold text-black inline-block sm:inline-block md:hidden lg:hidden">Web Dev Mentor</h1>
                     <div className="w-full sm:w-full md:w-1/2 lg:w-1/2 text-center py-5">
-                        <div className=" border-8 border-black rounded-3xl w-80 h-96 hidden sm:hidden md:hidden lg:inline-block"></div>
+                        <div className=" border-8 border-blue-400 rounded-3xl w-80 h-98 hidden sm:hidden md:hidden lg:inline-block"></div>
                             <img
-                                className="z-10 lg:-mt-80 lg:ml-24 inline-block"
+                                className="z-10 lg:-mt-96 lg:ml-24 inline-block"
                                 alt="hero"
                                 src="/assets/img/Mentor.png"
                             />

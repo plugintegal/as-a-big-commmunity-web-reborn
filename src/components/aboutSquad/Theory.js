@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
 
 export default class Theory extends Component {
     constructor(props) {
@@ -24,9 +23,7 @@ export default class Theory extends Component {
         return (
             <div>
                 <section className="container mx-auto px-5 py-5 text-gray-600 body-font">
-                    <h1 className="text-3xl font-bold text-black mb-0 sm:mb-0 md:mb-10 lg:mb-14">Timeline Web Dev</h1>
-                    <p className="mb-0 sm:mb-0 md:mb-10 lg:mb-12">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-
+                    <h1 className="text-3xl font-bold text-black mb-0 sm:mb-0 md:mb-10 lg:mb-12">Timeline Web Dev</h1>
                     <div className="flex flex-wrap mt-2">
                         <div className="w-full">
                             <ul
