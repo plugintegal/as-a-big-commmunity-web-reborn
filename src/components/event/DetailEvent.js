@@ -24,12 +24,12 @@ class DetailEvent extends Component {
               </h1>
             </div>
             <div className="container px-5 pt-6 mx-auto flex flex-wrap">
-              <div className="flex flex-wrap -m-4">
+              <div className="flex flex-wrap">
                 <div className="lg:w-2/3 md:w-full">
-                  <div className="flex flex-col px-4">
+                  <div className="flex flex-col">
                     <div className="w-full h-full mb-6 items-center justify-center">
                       <img
-                        src="/assets/img/event4.png"
+                        src={this.props.eventDetail.image_event}
                         className="w-full rounded-md"
                         alt=""
                       />
@@ -105,7 +105,7 @@ class DetailEvent extends Component {
                     </div>
                   </div>
                 </div>
-                <div className="lg:w-1/3 md:w-full">
+                <div className="lg:w-1/3 pl-5 md:w-full">
                   <div className="flex justify-center px-4 flex-col text-center lg:text-left">
                     <div className="flex-grow">
                       <h2 className="text-gray-900 text-xl title-font font-medium my-3 hidden lg:inline-block">
