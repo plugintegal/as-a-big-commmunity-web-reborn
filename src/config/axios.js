@@ -1,7 +1,7 @@
-import axios from 'axios'
+import axios from "axios";
 
 const instance = axios.create({
-  baseURL:'https://app-server-ta.herokuapp.com/'
-})
+  baseURL: "https://as-a-big-community-back-end.herokuapp.com/",
+});
 
-export default instance
+export default instance;

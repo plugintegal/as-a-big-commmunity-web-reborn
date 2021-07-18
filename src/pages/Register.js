@@ -5,7 +5,7 @@ export default class Register extends Component {
     return (
       <div>
         <section className="text-gray-600 body-font">
-          <div className="bg-hero-pattern2 bg-no-repeat bg-HW z-10 bg-500px">
+          <div className="bg-hero-pattern2 bg-no-repeat bg-HW z-10 bg-550px">
             <div className="container mx-auto flex px-5 py-10 md:flex-row flex-col items-center">
               <div className=" lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center md:mt-10  xs">
                 <h3 className=" lg:text-3xl md:text-2xl sm:text-xl text-blue-400 font-bold ">

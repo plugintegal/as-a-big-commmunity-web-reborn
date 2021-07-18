@@ -31,3 +31,19 @@ export const fetchEventDetail = (evenId) => {
       });
   };
 };
+
+export const fetchBatch = () => {
+  return (dispatch) => {
+    axios
+      .get("batch")
+      .then(({ data }) => {
+        return dispatch({ type: "FETCH_BATCH", payload: data.data });
+      })
+      .catch((error) => {
+        return dispatch({ type: "FETCH_BATCH_ERROR", payload: error });
+      })
+      .finally(() => {
+        return dispatch({ type: "FETCH_BATCH_LOADING", payload: false });
+      });
+  };
+};

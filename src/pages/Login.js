@@ -5,7 +5,7 @@ export default class Login extends Component {
     return (
       <div>
         <section className="text-gray-600 body-font">
-          <div className="bg-hero-pattern1 bg-no-repeat bg-HW z-10 bg-410px">
+          <div className="bg-hero-pattern1 bg-no-repeat bg-HW z-10 bg-430px">
             <div className="container mx-auto flex px-5 py-10 md:flex-row flex-col items-center">
               <div className="md:w-1/2">
                 <div className="bg-blue-500 relative -z-1 text-white rounded-3xl md:w-600px md:h-580px w-400px h-200px">
