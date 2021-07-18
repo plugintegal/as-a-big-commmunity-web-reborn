@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import {Link} from 'react-router-dom'
 
 export default class Microblog extends Component {
   render() {
@@ -30,13 +31,13 @@ export default class Microblog extends Component {
                         <p class="leading-relaxed text-xs ">Plugin Tegal</p>
                       </div>
                     </div>
-                    <a className="block relative h-48 rounded overflow-hidden">
+                    <Link to="" className="block relative h-48 rounded overflow-hidden">
                       <img
                         alt="ecommerce"
                         className="object-cover object-center w-full h-full block"
                         src="/assets/img/ig1.png"
                       />
-                    </a>
+                    </Link>
                     <div className="mt-3">
                       <h3 className="p-3 text-gray-500 text-xs tracking-widest title-font mb-1">
                         venenatis, semper sed non vulputate. Lectus erat varius
@@ -62,13 +63,13 @@ export default class Microblog extends Component {
                         <p class="leading-relaxed text-xs ">Plugin Tegal</p>
                       </div>
                     </div>
-                    <a className="block relative h-48 rounded overflow-hidden">
+                    <Link to="" className="block relative h-48 rounded overflow-hidden">
                       <img
                         alt="ecommerce"
                         className="object-cover object-center w-full h-full block"
                         src="/assets/img/ig2.png"
                       />
-                    </a>
+                    </Link>
                     <div className="mt-3">
                       <h3 className="p-3 text-gray-500 text-xs tracking-widest title-font mb-1">
                         venenatis, semper sed non vulputate. Lectus erat varius
@@ -94,13 +95,13 @@ export default class Microblog extends Component {
                         <p class="leading-relaxed text-xs ">Plugin Tegal</p>
                       </div>
                     </div>
-                    <a className="block relative h-48 rounded overflow-hidden">
+                    <Link to="" className="block relative h-48 rounded overflow-hidden">
                       <img
                         alt="ecommerce"
                         className="object-cover object-center w-full h-full block"
                         src="/assets/img/ig3.png"
                       />
-                    </a>
+                    </Link>
                     <div className="mt-3">
                       <h3 className="p-3 text-gray-500 text-xs tracking-widest title-font mb-1">
                         venenatis, semper sed non vulputate. Lectus erat varius
@@ -126,13 +127,13 @@ export default class Microblog extends Component {
                         <p class="leading-relaxed text-xs ">Plugin Tegal</p>
                       </div>
                     </div>
-                    <a className="block relative h-48 rounded overflow-hidden">
+                    <Link to="" className="block relative h-48 rounded overflow-hidden">
                       <img
                         alt="ecommerce"
                         className="object-cover object-center w-full h-full block"
                         src="/assets/img/ig4.png"
                       />
-                    </a>
+                    </Link>
                     <div className="mt-3">
                       <h3 className="p-3 text-gray-500 text-xs tracking-widest title-font mb-1">
                         venenatis, semper sed non vulputate. Lectus erat varius
@@ -158,13 +159,13 @@ export default class Microblog extends Component {
                         <p class="leading-relaxed text-xs ">Plugin Tegal</p>
                       </div>
                     </div>
-                    <a className="block relative h-48 rounded overflow-hidden">
+                    <Link to="" className="block relative h-48 rounded overflow-hidden">
                       <img
                         alt="ecommerce"
                         className="object-cover object-center w-full h-full block"
                         src="/assets/img/ig1.png"
                       />
-                    </a>
+                    </Link>
                     <div className="mt-3">
                       <h3 className="p-3 text-gray-500 text-xs tracking-widest title-font mb-1">
                         venenatis, semper sed non vulputate. Lectus erat varius
@@ -190,13 +191,13 @@ export default class Microblog extends Component {
                         <p class="leading-relaxed text-xs ">Plugin Tegal</p>
                       </div>
                     </div>
-                    <a className="block relative h-48 rounded overflow-hidden">
+                    <Link to="" className="block relative h-48 rounded overflow-hidden">
                       <img
                         alt="ecommerce"
                         className="object-cover object-center w-full h-full block"
                         src="/assets/img/ig2.png"
                       />
-                    </a>
+                    </Link>
                     <div className="mt-3">
                       <h3 className="p-3 text-gray-500 text-xs tracking-widest title-font mb-1">
                         venenatis, semper sed non vulputate. Lectus erat varius
@@ -222,13 +223,13 @@ export default class Microblog extends Component {
                         <p class="leading-relaxed text-xs ">Plugin Tegal</p>
                       </div>
                     </div>
-                    <a className="block relative h-48 rounded overflow-hidden">
+                    <Link to="" className="block relative h-48 rounded overflow-hidden">
                       <img
                         alt="ecommerce"
                         className="object-cover object-center w-full h-full block"
                         src="/assets/img/ig3.png"
                       />
-                    </a>
+                    </Link>
                     <div className="mt-3">
                       <h3 className="p-3 text-gray-500 text-xs tracking-widest title-font mb-1">
                         venenatis, semper sed non vulputate. Lectus erat varius
@@ -254,13 +255,13 @@ export default class Microblog extends Component {
                         <p class="leading-relaxed text-xs ">Plugin Tegal</p>
                       </div>
                     </div>
-                    <a className="block relative h-48 rounded overflow-hidden">
+                    <Link to="" className="block relative h-48 rounded overflow-hidden">
                       <img
                         alt="ecommerce"
                         className="object-cover object-center w-full h-full block"
                         src="/assets/img/ig4.png"
                       />
-                    </a>
+                    </Link>
                     <div className="mt-3">
                       <h3 className="p-3 text-gray-500 text-xs tracking-widest title-font mb-1">
                         venenatis, semper sed non vulputate. Lectus erat varius

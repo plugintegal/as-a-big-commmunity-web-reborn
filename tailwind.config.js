@@ -27,6 +27,9 @@ module.exports = {
       backgroundSize: {
         HW: "400px 450px",
       },
+      spacing: {
+        98: "26rem",
+      },
     },
   },
   variants: {

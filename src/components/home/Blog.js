@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 export default class Blog extends Component {
   render() {
@@ -54,9 +55,11 @@ export default class Blog extends Component {
               </div>
             </div>
             <div class="p-3 w-full mt-5 ">
-              <button class="flex mx-auto text-white bg-indigo-500 border-0 py-1 px-8 focus:outline-none hover:bg-indigo-600 rounded-full text-lg">
-                Lihat Berita Lainya
-              </button>
+              <Link to="/blog">
+                <button class="flex mx-auto text-white bg-indigo-500 border-0 py-1 px-8 focus:outline-none hover:bg-indigo-600 rounded-full text-lg">
+                  Lihat Berita Lainya
+                </button>
+              </Link>
             </div>
           </div>
         </section>

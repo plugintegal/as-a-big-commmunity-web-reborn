@@ -6,7 +6,7 @@ export default class Allevent extends Component {
   render() {
     return (
       <div>
-        <section class="text-gray-600 body-font">
+        <section class="text-gray-600 body-font pt-36 sm:pt-28 md:pt-24 lg:pt-24">
           <div class="container px-4 py-10 mx-auto">
             <h2 className="font-bold text-3xl mb-10">Event</h2>
             <NavbarSort />

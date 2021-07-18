@@ -1,10 +1,11 @@
 import React, { Component } from "react";
+import {Link} from "react-router-dom"
 
 export default class Navbar extends Component {
   render() {
     return (
       <div>
-        <header className="text-gray-600 body-font">
+        <header className="text-gray-600 body-font fixed w-screen z-30 bg-white top-0">
           <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
             <a
               href
@@ -19,8 +20,9 @@ export default class Navbar extends Component {
             <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
               <p className="mr-5 hover:text-gray-900">WiyataOs</p>
               <p className="mr-5 hover:text-gray-900">Blog</p>
-              <p className="mr-5 hover:text-gray-900">Event</p>
-              <p className=" hover:text-gray-900">Achivment</p>
+              <Link to="/event" className="mr-5 hover:text-gray-900">Event</Link>
+              <p className="mr-5 hover:text-gray-900">Achivment</p>
+              <Link to="/registration-member" className=" hover:text-gray-900">Registration Member</Link>
             </nav>
           </div>
         </header>
