@@ -3,12 +3,13 @@ import AboutSquad from "./pages/AboutSquad";
 import Blog from "./pages/Blog";
 import DetailEvents from "./pages/DetailEvents";
 
-import Event from './pages/Event';
+import Event from "./pages/Event";
 import EventGrid from "./pages/EventGrid";
 import EventList from "./pages/EventList";
-
 import Home from "./pages/Home";
 import Login from "./pages/Login";
+import Register from "./pages/Register";
+
 import PaymentEvent from "./pages/PaymentEvent";
 import RegistrationEvent from "./pages/RegistrationEvent";
 import RegistrationMember from "./pages/RegistrationMember";
@@ -28,6 +29,7 @@ function App() {
       <Route path="/eventgrid" exact component={EventGrid} />
       <Route path="/eventlist" exact component={EventList} />
       <Route path="/login" exact component={Login} />
+      <Route path="/register" exact component={Register} />
     </Router>
   );
 }

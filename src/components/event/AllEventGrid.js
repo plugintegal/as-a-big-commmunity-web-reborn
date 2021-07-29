@@ -1,23 +1,28 @@
 import React from "react";
 import { useSelector } from "react-redux";
-import { useHistory } from 'react-router-dom';
+import { useHistory } from "react-router-dom";
 import moment from "moment";
 
 const AllEventGrid = () => {
-  const history = useHistory()
+  const history = useHistory();
   const events = useSelector((state) => state.eventReducers.events);
+  console.log("ini events", events);
 
   const handleMoveDetailEvent = (id) => {
-    history.push('/detail-event', {
-      eventId : id
-    })
-  }
+    history.push("/detail-event", {
+      eventId: id,
+    });
+  };
 
   return (
     <div className="flex flex-wrap -mx-4">
       {events.map((event, index) => {
         return (
-          <div key={index} className="p-4 md:w-1/2 cursor-pointer" onClick={() => handleMoveDetailEvent(event.id)}>
+          <div
+            key={index}
+            className="p-4 md:w-1/2 cursor-pointer"
+            onClick={() => handleMoveDetailEvent(event.id)}
+          >
             <div className="rounded-lg h-72  overflow-hidden">
               <img
                 alt="content"
