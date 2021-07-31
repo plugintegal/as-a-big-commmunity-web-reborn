@@ -1,8 +1,12 @@
+const defaultTheme = require("tailwindcss/defaultTheme");
 module.exports = {
   purge: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      fontFamily: {
+        sans: ["Poppins", ...defaultTheme.fontFamily.sans]
+      },
       backgroundImage: {
         "hero-pattern1":
           "url('https://res.cloudinary.com/dk4dgvu4w/image/upload/v1625500624/Saly-7_cl8hzv.png')",

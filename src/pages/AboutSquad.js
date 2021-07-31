@@ -23,7 +23,7 @@ const AboutSquad = () => {
   return (
     <>
       <Navbar />
-      {batches.length == 0 || (squadDetail && Object.values(squadDetail).length === 0 && squadDetail.consructor == Object) ? (
+      {batches.length == 0 && (squadDetail && Object.values(squadDetail).length === 0 && squadDetail.consructor == Object) ? (
         <Loading />
       ) : (
         <>

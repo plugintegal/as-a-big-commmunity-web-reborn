@@ -14,14 +14,9 @@ const Blog = () => {
         {blogs.slice(0, 2).map((blog) => {
           return (
             <div className="py-5">
-              <div className=" w-full lg:max-w-full lg:flex">
-                <div className="h-48 lg:h-auto lg:w-72 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden">
-                  <img
-                    src={blog.thumbnail}
-                    className="object-cover object-center w-full h-full"
-                  />
-                </div>
-                <div className="bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal shadow w-full">
+              <div className=" w-full lg:max-w-full lg:flex rounded-lg">
+                
+                <div className="bg-white rounded-b lg:rounded-b-none lg:rounded-l-lg p-4 flex flex-col justify-between leading-normal border-t-2 border-l-2 border-b-2 w-full">
                   <div className="mb-8">
                     <p className="text-sm text-gray-600 flex items-center">
                       <svg
@@ -38,6 +33,12 @@ const Blog = () => {
                     </div>
                     <p className="text-gray-700 text-base">{blog.author}</p>
                   </div>
+                </div>
+                <div className="h-48 lg:h-auto lg:w-96 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-r-lg text-center overflow-hidden">
+                  <img
+                    src={blog.thumbnail}
+                    className="object-cover object-center w-full h-full"
+                  />
                 </div>
               </div>
             </div>

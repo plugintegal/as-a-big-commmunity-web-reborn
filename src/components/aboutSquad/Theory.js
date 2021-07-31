@@ -67,8 +67,8 @@ const Theory = (props) => {
                           className={batch.id === openTab ? "block" : "hidden"}
                         >
                           {squadDetail.theories &&
-                          Object.keys(squadDetail.theories).length === 0 &&
-                          squadDetail.theories.constructor === Object
+                          Object.keys(squadDetail.theories).length == 0 &&
+                          squadDetail.theories.constructor == Object
                             ? (
                               <div className="w-full flex justify-center">
                                 Not available

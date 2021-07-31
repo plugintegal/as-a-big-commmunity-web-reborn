@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
-import { useLocation } from "react-router-dom";
+import { useLocation, useHistory } from "react-router-dom";
 import { postParticipant } from "../redux/actions/userActions";
 import {useFormik} from 'formik';
 import * as Yup from 'yup';
 
 const RegistrationEvent = () => {
+  const history = useHistory()
   const dispatch = useDispatch();
   const location = useLocation();
   const eventId = location.state.eventId;
@@ -27,8 +28,9 @@ const RegistrationEvent = () => {
         address : values.address,
         event_id : eventId
     }
-    console.log(data);
     dispatch(postParticipant(data))
+    history.push('/payment-event')
+
   }
 
   const validationSchema = Yup.object({
