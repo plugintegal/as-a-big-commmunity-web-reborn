@@ -5,7 +5,7 @@ import NavbarSort from "../NavbarSort";
 import Search from "../SearchEvent";
 import Sort from "../SortEvent";
 import { connect } from "react-redux";
-import { fetchEvents } from "../../redux/actions/userActions";
+import { fetchEvents, fetchCategories } from "../../redux/actions/userActions";
 
 class Allevent extends Component {
   constructor(props) {
@@ -14,35 +14,45 @@ class Allevent extends Component {
     this.state = {
       tabEventList: false,
       tabEventGrid: true,
+      category: "",
+      events : this.props.events
     };
 
     this.handleChangeTabEventList = this.handleChangeTabEventList.bind(this);
     this.handleChangeTabEventGrid = this.handleChangeTabEventGrid.bind(this);
+    this.handleChangeCategory = this.handleChangeCategory.bind(this);
   }
 
   handleChangeTabEventList = () => {
-    this.setState({
+    this.setState({...this.state,
       tabEventList: true,
       tabEventGrid: false,
     });
   };
 
   handleChangeTabEventGrid = () => {
-    this.setState({
+    this.setState({...this.state,
       tabEventList: false,
       tabEventGrid: true,
     });
   };
 
+  handleChangeCategory = (value) => {
+    console.log(this.state.events)
+    this.setState({...this.state,
+      events : this.props.events.filter(event => event.category_id == value)
+    })
+  };
+
   componentDidMount = () => {
-    console.log(this.props);
     this.props.fetchEvents();
+    this.props.fetchCategories();
   };
 
   render() {
     return (
       <div>
-        <section class="text-gray-600 body-font pt-36 sm:pt-28 md:pt-24 lg:pt-24">
+        <section class="text-gray-600 body-font pt-20 sm:pt-20 md:pt-20 lg:pt-20">
           <div class="container px-4 py-10 mx-auto">
             <h2 className="font-bold text-3xl mb-10">Event</h2>
             <NavbarSort
@@ -51,18 +61,19 @@ class Allevent extends Component {
               handleChangeTabEventList={this.handleChangeTabEventList}
               handleChangeTabEventGrid={this.handleChangeTabEventGrid}
             />
-            <Search />
+            {/* <Search /> */}
             <div className="flex">
-              {this.state.tabEventList && <AllEventList />}
-              {this.state.tabEventGrid && <AllEventGrid />}
+              <div className="w-3/4">
+              {this.state.tabEventList && <AllEventList events={this.state.events} />}
+              {this.state.tabEventGrid && <AllEventGrid events={this.state.events}/>}
+              </div>
               <div className="md:w-1/4">
                 <div>
                   <p className="ml-11 mt-5 flex-wrap">
-                    Ornare condimentum in ac quis. Amet, proin faucibus
-                    scelerisque scelerisque massa, donec fermentum.
+                    Event yang diadakan oleh organisasi PLUG-IN
                   </p>
                 </div>
-                <Sort />
+                <Sort handleChangeCategory={this.handleChangeCategory} />
               </div>
             </div>
           </div>
@@ -72,10 +83,17 @@ class Allevent extends Component {
   }
 }
 
-const mapDispatchToProps = () => {
+const mapStateToProps = (state) => {
   return {
-    fetchEvents: () => fetchEvents(),
+    events: state.eventReducers.events
   };
 };
 
-export default connect(null, mapDispatchToProps())(Allevent);
+const mapDispatchToProps = () => {
+  return {
+    fetchEvents: () => fetchEvents(),
+    fetchCategories: () => fetchCategories(),
+  };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps())(Allevent);

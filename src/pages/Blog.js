@@ -1,14 +1,22 @@
-import React, { Component } from "react";
+import React, { useEffect } from "react";
 import AllBlog from "../components/blog/AllBlog";
 import Navbar from "../components/Navbar";
+import { fetchBlogs } from "../redux/actions/userActions";
+import { useDispatch } from "react-redux";
 
-export default class Blog extends Component {
-    render() {
-        return (
-            <>
-                <Navbar />
-                <AllBlog />
-            </>
-        );
-    }
-}
+const Blog = () => {
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(fetchBlogs());
+  }, []);
+
+  return (
+    <>
+      <Navbar />
+      <AllBlog />
+    </>
+  );
+};
+
+export default Blog;

@@ -7,11 +7,19 @@ import moment from "moment";
 class DetailEvent extends Component {
   constructor(props) {
     super(props);
+
+    this.handleEventRegister = this.handleEventRegister.bind(this);
   }
 
   componentDidMount = () => {
     this.props.fetchEventDetail(this.props.location.state.eventId);
   };
+
+  handleEventRegister = (e) => {
+    this.props.history.push('/registration-event', {
+      eventId : e.target.id
+    })
+  }
 
   render() {
     return (
@@ -30,7 +38,7 @@ class DetailEvent extends Component {
                     <div className="w-full h-full mb-6 items-center justify-center">
                       <img
                         src={this.props.eventDetail.image_event}
-                        className="w-full rounded-md"
+                        className="w-full rounded-md object-cover"
                         alt=""
                       />
                     </div>
@@ -45,24 +53,6 @@ class DetailEvent extends Component {
                         {this.props.eventDetail.description}
                       </p>
                     </div>
-                    {/* <div className="flex-grow">
-                      <h2 className="text-gray-900 text-lg title-font font-medium my-3">
-                        RunDown Acara
-                      </h2>
-                      <p className="leading-relaxed text-base mb-2 lg:mb-3 md:mb-3 ">
-                        <span className="font-bold mr-2">19.00 - 19.10</span>
-                        Pembukaan oleh moderator (Felix Yunianto Gunawan -
-                        Google Associate Android Developer, Curriculum Developer
-                        Plugin).
-                      </p>
-                      <p className="leading-relaxed text-base">
-                        <span className="font-bold mr-2">19.10 - 20.00</span>
-                        "Plugin Developer Coaching #01: Android | Pentingnya
-                        Performa pada Aplikasi Android" akan dibawakan oleh
-                        Khafidul Mualif (Google Associate Android Developer,
-                        Code Reviewer Plugin).
-                      </p>
-                    </div> */}
                     <div className="flex-grow">
                       <h2 className="text-gray-900 text-lg title-font font-medium my-3">
                         Schedule
@@ -130,7 +120,7 @@ class DetailEvent extends Component {
                           WIB
                         </span>
                       </p>
-                      <button className="text-white bg-indigo-500 border-0 py-1 px-8 focus:outline-none hover:bg-indigo-600 rounded-full text-lg">
+                      <button id={this.props.eventDetail.id} onClick={this.handleEventRegister} className="text-white bg-indigo-500 border-0 py-1 px-8 focus:outline-none hover:bg-indigo-600 rounded-full text-lg">
                         Daftar Event
                       </button>
                     </div>

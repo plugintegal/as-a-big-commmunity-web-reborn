@@ -10,7 +10,7 @@ export default class NavbarSort extends Component {
     console.log(this.props)
     return (
       <>
-        <div className="md:w-3/4 border-2 h-15 rounded inline-flex">
+        <div className="w-full border-2 h-15 rounded inline-flex">
           <div className="content-center flex flex-wrap items-center">
             <Link onClick={() => this.props.handleChangeTabEventGrid()}>
               <FiGrid className={(this.props.tabEventGrid ? "text-blue-400 " : " ") + " text-3xl ml-3 hover:text-blue-500"}/>
@@ -22,7 +22,7 @@ export default class NavbarSort extends Component {
           <div className="p-2 ml-auto">
             <div className="relative w-60 inline-block text-left ml-auto">
               <div>
-                <button
+                {/* <button
                   type="button"
                   className="inline-flex justify-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500"
                   id="menu-button"
@@ -30,7 +30,6 @@ export default class NavbarSort extends Component {
                   aria-haspopup="true"
                 >
                   Urut Berdasarkan
-                  {/* Heroicon name: solid/chevron-down */}
                   <svg
                     className="-mr-1 ml-2 h-5 w-5"
                     xmlns="http://www.w3.org/2000/svg"
@@ -44,7 +43,7 @@ export default class NavbarSort extends Component {
                       clipRule="evenodd"
                     />
                   </svg>
-                </button>
+                </button> */}
               </div>
             </div>
           </div>

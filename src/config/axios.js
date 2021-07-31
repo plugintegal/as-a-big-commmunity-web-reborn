@@ -1,7 +1,9 @@
 import axios from "axios";
 
-const instance = axios.create({
+export const instance = axios.create({
   baseURL: "https://as-a-big-community-back-end.herokuapp.com/",
 });
 
-export default instance;
+export const instanceMedium = axios.create({
+  baseURL: "https://api.rss2json.com/v1/"
+})
