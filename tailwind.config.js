@@ -7,11 +7,15 @@ module.exports = {
       fontFamily: {
         sans: ["Poppins", ...defaultTheme.fontFamily.sans]
       },
+      colors: {
+        "biru" : "#3A99DA"
+      },
       backgroundImage: {
         "hero-pattern1":
           "url('https://res.cloudinary.com/dk4dgvu4w/image/upload/v1625500624/Saly-7_cl8hzv.png')",
         "hero-pattern2":
           "url('https://res.cloudinary.com/dk4dgvu4w/image/upload/v1625500624/Saly-34_kguaag.png')",
+        "footer-bg": "url('https://res.cloudinary.com/zada/image/upload/v1627736600/Group_203_p493aa.png')"
       },
       zIndex: {
         "-1": "-1",
