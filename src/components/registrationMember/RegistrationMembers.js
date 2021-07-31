@@ -23,7 +23,7 @@ export default class RegistrationMembers extends Component {
                             <div class="flex-grow sm:pl-6 mt-6 sm:mt-22">
                                 <h1 class="leading-relaxed text-gray-900 font-bold">Pendaftaran Calon Anggota PLUG-IN</h1>
                                 <p class="leading-relaxed mt-2">Semua info dan teknis ada di sini.</p>
-                                <Link to="/blog">
+                                <Link to="/register">
                                     <button class="flex mx-auto mt-2 text-white bg-indigo-500 border-0 py-1 px-8 focus:outline-none hover:bg-indigo-600 rounded-full text-lg ">
                                         Registration
                                     </button>
