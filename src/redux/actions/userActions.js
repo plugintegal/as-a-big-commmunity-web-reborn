@@ -69,9 +69,11 @@ export const postParticipant = (data) => {
     instance
       .post("participant", data)
       .then(({ data }) => {
+        alert('Success Daftar')
         return dispatch({ type: "POST_PARTICIPANT", payload: data.data });
       })
       .catch((error) => {
+        alert('Failed Daftar ', error.response)
         return dispatch({ type: "POST_PARTICIPANT_ERROR", payload: error });
       })
       .finally(() => {
