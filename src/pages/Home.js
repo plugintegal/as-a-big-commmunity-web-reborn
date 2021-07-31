@@ -4,6 +4,7 @@ import Event from "../components/home/Event";
 import Microblog from "../components/home/Microblog";
 import Hero from "../components/home/Hero";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 import { useDispatch, useSelector } from "react-redux";
 import {
   fetchEvents,
@@ -41,6 +42,7 @@ const Home = () => {
           <Event />
           <Blog />
           {/* <Microblog /> */}
+          <Footer />
         </>
       )}
     </>

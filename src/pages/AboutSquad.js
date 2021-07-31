@@ -7,6 +7,7 @@ import { withRouter, useLocation } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchSquadDetail, fetchBatch } from "../redux/actions/userActions";
 import Loading from '../components/parts/Loading'
+import Footer from "../components/Footer";
 
 const AboutSquad = () => {
   const location = useLocation();
@@ -30,6 +31,7 @@ const AboutSquad = () => {
           <Hero />
           <Tech />
           <Theory squadId={squadId} />
+          <Footer />
         </>
       )}
     </>
