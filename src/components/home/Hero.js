@@ -62,7 +62,7 @@ const Hero = () => {
             <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
               Tentang Plugin
             </h1>
-            <p className="mb-8 text-2xl ">
+            <p className="mb-8 text-lg ">
               <span className="font-bold">PLUGIN</span> adalah suatu organisasi
               atau komunitas studi linux dan pengembangan aplikasi di Politeknik
               Harapan Bersama Tegal. Kami mempunyai tujuan untuk mengenalkan dan
