@@ -26,7 +26,7 @@ const SortEvent = (props) => {
                     class="form-checkbox h-5 w-5 text-gray-600 -ml-5"
                     value={category.id}
                     onChange={(e) => handleCheckboxSelected(e.target.value)}
-                    checked={ selectedCategoryCheckbox == category.id }
+                    checked={ selectedCategoryCheckbox === category.id }
                   />
                   <span class="ml-2 text-gray-700">{category.category_name}</span>
                 </label>

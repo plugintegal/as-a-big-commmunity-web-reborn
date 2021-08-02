@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import Blog from "../components/home/Blog";
 import Event from "../components/home/Event";
-import Microblog from "../components/home/Microblog";
 import Hero from "../components/home/Hero";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
@@ -26,14 +25,15 @@ const Home = () => {
     dispatch(fetchBlogs());
     dispatch(fetchSquads());
     dispatch(fetchBatch());
+    // eslint-disable-next-line
   }, []);
 
   return (
     <>
-      {events.length == 0 &&
-      batches == 0 &&
-      squads.length == 0 &&
-      blogs == 0 ? (
+      {events.length === 0 &&
+      batches === 0 &&
+      squads.length === 0 &&
+      blogs === 0 ? (
         <Loading />
       ) : (
         <>

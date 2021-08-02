@@ -1,26 +1,34 @@
 import React, { useEffect, useState } from "react";
-import { useSelector, useDispatch } from "react-redux";
+import { useDispatch } from "react-redux";
 import { fetchSquadDetail } from "../../redux/actions/userActions";
 
 const Theory = (props) => {
   const dispatch = useDispatch();
-
-  const batches = useSelector((state) => state.batchReducers.batch);
-  const squadDetail = useSelector((state) => state.squadReducers.squadDetail);
-  const [openTab, setOpenTab] = useState(
-    batches.lenght > 0 ? batches[0].id : 1
-  );
+  const [theories, setTheories] = useState([])
+  const [batches, setBatches] = useState([])
+  const [openTab, setOpenTab] = useState();
 
   const handleChangeTab = (value) => {
     dispatch(fetchSquadDetail(props.squadId, `?batch_id=${value}`));
-    console.log(batches);
   };
+
+  useEffect(()=> {
+    if(props.squadDetail.theories){
+      setTheories(props.squadDetail.theories);
+    }
+
+    if(props.batches.length > 0){
+      setBatches(props.batches)
+      setOpenTab(props.batches[0].id)
+    }
+    // eslint-disable-next-line
+  },[props.squadDetail])
 
   return (
     <div>
       <section className="container mx-auto px-5 py-5 text-gray-600 body-font">
         <h1 className="text-3xl font-bold text-black mb-0 sm:mb-0 md:mb-10 lg:mb-12">
-          Timeline {squadDetail.squads_name}
+          Timeline {props.squadDetail.squads_name}
         </h1>
         <div className="flex flex-wrap mt-2">
           <div className="w-full">
@@ -30,7 +38,6 @@ const Theory = (props) => {
             >
               {batches.length > 0 &&
                 batches.map((batch, index) => {
-                  console.log(batch.id === openTab);
                   return (
                     <li
                       className="-mb-px mr-2 last:mr-0 flex-auto text-center"
@@ -66,15 +73,13 @@ const Theory = (props) => {
                         <div
                           className={batch.id === openTab ? "block" : "hidden"}
                         >
-                          {squadDetail.theories &&
-                          Object.keys(squadDetail.theories).length == 0 &&
-                          squadDetail.theories.constructor == Object
+                          {theories.length === 0
                             ? (
                               <div className="w-full flex justify-center">
                                 Not available
                               </div>
                             )
-                            : Object.values(squadDetail.theories)[0].map(
+                            : theories.map(
                                 (theory, index) => {
                                   return (
                                     <div class="flex flex-wrap" key={index}>

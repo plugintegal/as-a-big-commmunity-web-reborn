@@ -3,9 +3,6 @@ import { Link } from "react-router-dom";
 import {FiMenu, FiGrid} from 'react-icons/fi';
 
 export default class NavbarSort extends Component {
-  constructor(props){
-    super(props)
-  }
   render() {
     console.log(this.props)
     return (

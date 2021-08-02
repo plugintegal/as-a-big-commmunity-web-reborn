@@ -9,6 +9,7 @@ const Blog = () => {
 
   useEffect(() => {
     dispatch(fetchBlogs());
+    //eslint-disable-next-line
   }, []);
 
   return (
