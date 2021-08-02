@@ -36,6 +36,7 @@ const Blog = () => {
                 </div>
                 <div className="h-48 lg:h-auto lg:w-96 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-r-lg text-center overflow-hidden">
                   <img
+                    alt="thumbnail"
                     src={blog.thumbnail}
                     className="object-cover object-center w-full h-full"
                   />

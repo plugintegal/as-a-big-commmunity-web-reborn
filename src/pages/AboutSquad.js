@@ -15,22 +15,23 @@ const AboutSquad = () => {
   const dispatch = useDispatch();
   const batches = useSelector((state) => state.batchReducers.batch);
   const squadDetail = useSelector((state) => state.squadReducers.squadDetail);
-
+console.log(squadDetail);
   useEffect(() => {
     dispatch(fetchSquadDetail(squadId, null));
     dispatch(fetchBatch());
+    //eslint-disable-next-line
   }, []);
 
   return (
     <>
       <Navbar />
-      {batches.length == 0 && (squadDetail && Object.values(squadDetail).length === 0 && squadDetail.consructor == Object) ? (
+      {batches.length === 0 && (squadDetail && Object.values(squadDetail).length === 0 && squadDetail.consructor === Object) ? (
         <Loading />
       ) : (
         <>
           <Hero />
           <Tech />
-          <Theory squadId={squadId} />
+          <Theory squadId={squadId} batches={batches} squadDetail={squadDetail} />
           <Footer />
         </>
       )}

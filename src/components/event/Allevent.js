@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import AllEventGrid from "./AllEventGrid";
 import AllEventList from "./AllEventList";
 import NavbarSort from "../NavbarSort";
-import Search from "../SearchEvent";
 import Sort from "../SortEvent";
 import { connect } from "react-redux";
 import { fetchEvents, fetchCategories } from "../../redux/actions/userActions";
@@ -38,9 +37,8 @@ class Allevent extends Component {
   };
 
   handleChangeCategory = (value) => {
-    console.log(this.state.events)
     this.setState({...this.state,
-      events : this.props.events.filter(event => event.category_id == value)
+      events : this.props.events.filter(event => event.category_id === value)
     })
   };
 

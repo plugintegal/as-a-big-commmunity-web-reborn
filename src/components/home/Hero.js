@@ -1,5 +1,5 @@
-import React, { useEffect } from "react";
-import { Link, useHistory, withRouter } from "react-router-dom";
+import React from "react";
+import { useHistory, withRouter } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { fetchSquadDetail } from '../../redux/actions/userActions'
 

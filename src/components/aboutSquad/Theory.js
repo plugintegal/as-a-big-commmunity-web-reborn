@@ -1,20 +1,37 @@
 import React, { useEffect, useState } from "react";
-import { useSelector, useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { fetchSquadDetail } from "../../redux/actions/userActions";
 
 const Theory = (props) => {
   const dispatch = useDispatch();
-
-  const batches = useSelector((state) => state.batchReducers.batch);
-  const squadDetail = useSelector((state) => state.squadReducers.squadDetail);
+  const [theories, setTheories] = useState([]);
+  const [batches, setBatches] = useState([]);
   const [openTab, setOpenTab] = useState(
-    batches.lenght > 0 ? batches[0].id : 1
+    props.batches.length > 0 ? props.batches[0].id : 1
   );
+  const squadDetail = useSelector((state) => state.squadReducers.squadDetail);
+  const [loadingTheory, setLoadingTheory] = useState(false);
 
   const handleChangeTab = (value) => {
+    setLoadingTheory(true);
     dispatch(fetchSquadDetail(props.squadId, `?batch_id=${value}`));
-    console.log(batches);
   };
+
+  useEffect(() => {
+    if (squadDetail.theories) {
+      console.log(JSON.stringify(squadDetail.theories));
+      setTheories(squadDetail.theories);
+      setLoadingTheory(false);
+    } else {
+      setTheories([]);
+      setLoadingTheory(false);
+    }
+
+    if (props.batches.length > 0) {
+      setBatches(props.batches);
+    }
+    // eslint-disable-next-line
+  }, [squadDetail]);
 
   return (
     <div>
@@ -30,7 +47,6 @@ const Theory = (props) => {
             >
               {batches.length > 0 &&
                 batches.map((batch, index) => {
-                  console.log(batch.id === openTab);
                   return (
                     <li
                       className="-mb-px mr-2 last:mr-0 flex-auto text-center"
@@ -45,7 +61,7 @@ const Theory = (props) => {
                         }
                         onClick={(e) => {
                           e.preventDefault();
-                          setOpenTab(batch.id);
+                          setOpenTab(parseInt(batch.id));
                           handleChangeTab(batch.id);
                         }}
                         data-toggle="tab"
@@ -66,16 +82,14 @@ const Theory = (props) => {
                         <div
                           className={batch.id === openTab ? "block" : "hidden"}
                         >
-                          {squadDetail.theories &&
-                          Object.keys(squadDetail.theories).length == 0 &&
-                          squadDetail.theories.constructor == Object
-                            ? (
-                              <div className="w-full flex justify-center">
-                                Not available
-                              </div>
-                            )
-                            : Object.values(squadDetail.theories)[0].map(
-                                (theory, index) => {
+                          {!loadingTheory ? (
+                            <>
+                              {theories.length === 0 ? (
+                                <div className="w-full flex justify-center">
+                                  Not available
+                                </div>
+                              ) : (
+                                theories.map((theory, index) => {
                                   return (
                                     <div class="flex flex-wrap" key={index}>
                                       <div class="flex relative pt-6">
@@ -95,8 +109,20 @@ const Theory = (props) => {
                                       </div>
                                     </div>
                                   );
-                                }
+                                })
                               )}
+                            </>
+                          ) : (
+                            <div className="flex h-auto w-full items-center justify-center">
+                              <div className="animate-pules">
+                                <div class="animate-pulse flex space-x-4">
+                                  <div class="rounded-full bg-blue-400 h-2 w-2"></div>
+                                  <div class="rounded-full bg-blue-400 h-2 w-2"></div>
+                                  <div class="rounded-full bg-blue-400 h-2 w-2"></div>
+                                </div>
+                              </div>
+                            </div>
+                          )}
                         </div>
                       );
                     })

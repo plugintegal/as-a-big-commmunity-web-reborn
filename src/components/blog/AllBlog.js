@@ -7,7 +7,7 @@ const AllBlog = () => {
   const [blogData, setBlogData] = useState(blogs);
 
   const handleSearch = (e) => {
-    if (e.target.value == "") {
+    if (e.target.value === "") {
       setBlogData(blogs);
     } else {
       const newData = blogs.filter((data) => data.title.toLowerCase().indexOf(e.target.value) >= 0 )
@@ -37,7 +37,7 @@ const AllBlog = () => {
                 <img
                   src="/assets/img/ic_round-search.png"
                   className="w-5 h-5"
-                  alt=""
+                  alt="icon"
                 />
               </button>
             </div>
@@ -53,6 +53,7 @@ const AllBlog = () => {
               <a
                 href={blog.link}
                 target="_blank"
+                rel="noreferrer"
                 className="rounded-lg overflow-hidden shadow-lg"
                 key={index}
               >
