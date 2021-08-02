@@ -35,7 +35,7 @@ const Event = () => {
                     <div className="bg-white rounded-md w-80 shadow-lg">
                       <div className="inline-flex ">
                         <div className="inline-flex ">
-                          <div className=" ml-2 mr-4 text-red-100 bg-blue-600 rounded-xl px-6 py-4 mb-4 mt-4 block text-center">
+                          <div className=" ml-2 mr-4 text-red-100 bg-biru rounded-xl px-6 py-4 mb-4 mt-4 block text-center">
                             {moment(event.date).format("D")}{" "}
                             <span className="block text-center">
                               {moment(event.date).format("MMM")}
@@ -52,7 +52,7 @@ const Event = () => {
                         </div>
                       </div>
                       <div className="ml-40">
-                        <span className="block w-40 text-center text-red-100 bg-blue-600 rounded-br-lg rounded-tl-lg px-6 py-1">
+                        <span className="block w-40 text-center text-red-100 bg-biru rounded-br-lg rounded-tl-lg px-6 py-1">
                           {new Intl.NumberFormat("id-ID", {
                             style: "currency",
                             currency: "IDR",
@@ -72,7 +72,7 @@ const Event = () => {
             </p>
             <div class="p-2 w-full mt-5">
               <Link to="/event">
-                <button class="flex  text-white bg-indigo-500 border-0 py-1 px-8 focus:outline-none hover:bg-indigo-600 rounded-full text-lg">
+                <button class="flex  text-white bg-biru font-bold border-0 py-1 px-8 focus:outline-none hover:bg-indigo-600 rounded-full text-lg">
                   Lihat Semua Event
                 </button>
               </Link>

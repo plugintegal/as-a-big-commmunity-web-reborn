@@ -46,9 +46,9 @@ const Blog = () => {
           );
         })}
 
-        <div className="p-3 w-full mt-5 ">
+        <div className="p-3 w-full">
           <Link to="/blog">
-            <button className="flex mx-auto text-white bg-indigo-500 border-0 py-1 px-8 focus:outline-none hover:bg-indigo-600 rounded-full text-lg">
+            <button className="flex mx-auto text-white bg-biru font-bold border-0 py-1 px-8 focus:outline-none hover:bg-indigo-600 rounded-full text-lg">
               Lihat Berita Lainya
             </button>
           </Link>
