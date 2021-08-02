@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Slider from "react-slick";
 import { useSelector } from "react-redux";
 import moment from "moment";
+import { useHistory } from "react-router-dom";
 
 const Event = () => {
   const events = useSelector((state) => state.eventReducers.events);
@@ -15,6 +16,14 @@ const Event = () => {
     autoplay: true,
     autoplaySpeed: 2000,
   };
+
+  const history = useHistory();
+  const handleMoveDetailEvent = (id) => {
+    history.push("/detail-event", {
+      eventId: id,
+    });
+  };
+
   return (
     <section class="text-gray-600 body-font">
       <div class="container px-4 py-24 mx-auto">
@@ -26,7 +35,7 @@ const Event = () => {
             <Slider {...settings}>
               {events.map((event, index) => {
                 return (
-                  <div className=" p-4 md:w-1/3 sm:mb-0 mb-6" key={index}>
+                  <div className="cursor-pointer p-4 md:w-1/3 sm:mb-0 mb-6" key={index} onClick={() => handleMoveDetailEvent(event.id)}>
                     <div className="rounded-lg h-60 w-80 overflow-hidden">
                       <img
                         alt="content"

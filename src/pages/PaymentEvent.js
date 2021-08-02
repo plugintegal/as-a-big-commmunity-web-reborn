@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 export default class PaymentEvent extends Component {
   render() {
@@ -87,8 +88,8 @@ export default class PaymentEvent extends Component {
                 </p>
                 <ol className="mb-10">
                   <li>
-                    1. Transfer Ke nomor rekening diatas ini AN Felix
-                    Yunianto Gunawan
+                    1. Transfer Ke nomor rekening diatas ini AN Felix Yunianto
+                    Gunawan
                   </li>
                   <li>
                     2. Hubungi Nomor whatsap yang tersedia diatas untuk
@@ -104,9 +105,9 @@ export default class PaymentEvent extends Component {
                   </li>
                   <li>4. Tunggu informasi selanjutnya.</li>
                 </ol>
-                <button className="w-full sm:w-80 md:w-64 lg:w-98 text-white bg-blue-400 rounded-full border-0 py-2 px-6 focus:outline-nonetext-lg">
+                <Link to="/" className="w-full sm:w-80 md:w-64 lg:w-98 text-white bg-blue-400 rounded-full border-0 py-2 px-6 focus:outline-nonetext-lg text-center">
                   Back to Home
-                </button>
+                </Link>
               </div>
             </div>
           </div>
