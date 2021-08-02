@@ -37,7 +37,6 @@ class Allevent extends Component {
   };
 
   handleChangeCategory = (value) => {
-    console.log(this.state.events)
     this.setState({...this.state,
       events : this.props.events.filter(event => event.category_id === value)
     })

@@ -8,8 +8,8 @@ const SortEvent = (props) => {
   );
 
   const handleCheckboxSelected = (value) => {
-    props.handleChangeCategory(value)
-    setSelectedCategoryCheckbox(value)
+    props.handleChangeCategory(parseInt(value))
+    setSelectedCategoryCheckbox(parseInt(value))
   }
 
   return (

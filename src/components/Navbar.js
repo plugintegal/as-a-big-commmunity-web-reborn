@@ -18,11 +18,11 @@ export default class Navbar extends Component {
               />
             </Link>
             <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
-              <p className="mr-5 hover:text-gray-900 hover:font-bold">WiyataOs</p>
+              {/* <p className="mr-5 hover:text-gray-900 hover:font-bold">WiyataOs</p> */}
               <Link to="/blog" className="mr-5 hover:text-gray-900">Blog</Link>
               <Link to="/event" className="mr-5 hover:text-gray-900 ">Event</Link>
-              <p className="mr-5 hover:text-gray-900">Achivment</p>
-              <Link to="/registration-member" className=" hover:text-gray-900">Registration Member</Link>
+              {/* <p className="mr-5 hover:text-gray-900">Achivment</p> */}
+              {/* <Link to="/registration-member" className=" hover:text-gray-900">Registration Member</Link> */}
             </nav>
           </div>
         </header>
