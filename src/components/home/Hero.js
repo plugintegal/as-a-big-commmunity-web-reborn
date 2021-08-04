@@ -53,7 +53,7 @@ const Hero = () => {
         <div className="container mx-auto flex md:flex-row flex-col items-center">
           <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
             <img
-              className="object-cover object-center rounded -ml-16"
+              className="object-cover object-center rounded -ml-22 xl:-ml-20 lg:-ml-10 md:-ml-8 sm:-ml-5"
               alt="hero"
               src="https://res.cloudinary.com/zada/image/upload/v1628083471/tentang-min_na5nuh.png"
             />
@@ -97,7 +97,7 @@ const Hero = () => {
                   <div id={squad.id} className="border-2 rounded-lg hover:bg-biru hover:text-white">
                     <div className="flex p-8 sm:flex-row flex-col text-center" id={squad.id}>
                       <div className="flex-grow">
-                        <h2 className="font-bold text-lg title-font font-medium mb-3"  id={squad.id}>
+                        <h2 className="text-lg title-font font-medium mb-3"  id={squad.id}>
                           {squad.squads_name}
                         </h2>
                         <p className="leading-relaxed text-base" id={squad.id}>
