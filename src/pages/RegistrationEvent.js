@@ -177,7 +177,7 @@ const RegistrationEvent = () => {
                   htmlFor="institution"
                   className="leading-7 text-sm text-gray-600"
                 >
-                  Instituion
+                  Institution
                 </label>
                 <input
                   type="text"

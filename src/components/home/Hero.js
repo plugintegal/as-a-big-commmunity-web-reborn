@@ -24,15 +24,15 @@ const Hero = () => {
         <div className="container mx-auto flex px-5 py-5 md:flex-row flex-col items-center">
           <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
             <h1 className="title-font sm:text-4xl text-3xl mb-3 font-bold text-gray-900">
-              Plugin
+              PLUG-IN
             </h1>
-            <nav className="flex flex-wrap items-center text-base justify-center mb-10">
-              <p className="mr-12 hover:text-gray-900">Passionate</p>
-              <p className="mr-12 hover:text-gray-900">Learning</p>
-              <p className="mr-12 hover:text-gray-900">Unity</p>
-              <p className="mr-12 hover:text-gray-900">Global</p>
-              <p className="mr-12 hover:text-gray-900">Inovate</p>
-              <p className="hover:text-gray-900">Nationality</p>
+            <nav className="flex flex-wrap items-center text-base justify-between mb-5 gap-3">
+              <p className="hover:text-gray-900 lg:block md:hidden sm:hidden">Passionate</p>
+              <p className="hover:text-gray-900 lg:block md:hidden sm:hidden">Learning</p>
+              <p className="hover:text-gray-900 lg:block md:hidden sm:hidden">Unity</p>
+              <p className="hover:text-gray-900 lg:block md:hidden sm:hidden">Global</p>
+              <p className="hover:text-gray-900 lg:block md:hidden sm:hidden">Inovate</p>
+              <p className="hover:text-gray-900 lg:block md:hidden sm:hidden">Nationality</p>
             </nav>
             <p className="mb-8 leading-relaxed text-2xl">
               Komunitas linux dan pengembangan aplikasi di Politeknik Harapan
@@ -49,7 +49,7 @@ const Hero = () => {
         </div>
       </section>
 
-      <section className="text-gray-600 body-font -mt-36">
+      <section className="text-gray-600 body-font lg:-mt-36 sm:mt-20 md:mt-20">
         <div className="container mx-auto flex md:flex-row flex-col items-center">
           <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
             <img
@@ -60,10 +60,10 @@ const Hero = () => {
           </div>
           <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
             <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
-              Tentang Plugin
+              Tentang PLUG-IN
             </h1>
             <p className="mb-8 text-lg ">
-              <span className="font-bold">PLUGIN</span> adalah suatu organisasi
+              <span className="font-bold">PLUG-IN</span> adalah suatu organisasi
               atau komunitas studi linux dan pengembangan aplikasi di Politeknik
               Harapan Bersama Tegal. Kami mempunyai tujuan untuk mengenalkan dan
               mengOpen Source kan mahasiswa dan masyarakat umum dengan berbagai
@@ -79,13 +79,13 @@ const Hero = () => {
         <div className="container px-5 mx-auto py-10">
           <div className="flex flex-col text-center w-full mb-5">
             <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">
-              Plugin Squad
+            PLUG-IN Squad
             </h1>
             <p className="lg:w-2/3 mx-auto leading-relaxed text-1xl text-base">
               <span className="font-bold">Squad</span> di{" "}
-              <span className="font-bold"> PLUGIN</span> ada 4, masing-masing
+              <span className="font-bold"> PLUG-IN</span> ada 4, masing-masing
               punya fokus dan tujuan tersendiri, dibuatnya squad ini agar
-              teman-teman PLUGIN bisa menentukan akan konsentrasi dimana
+              teman-teman PLUG-IN bisa menentukan akan konsentrasi dimana
             </p>
           </div>
         </div>
@@ -94,10 +94,10 @@ const Hero = () => {
             {squads.map((squad, index) => {
               return (
                 <div className="p-4 lg:w-1/2 md:w-full cursor-pointer" key={index} onClick={handleDetailSquad}>
-                  <div id={squad.id}>
+                  <div id={squad.id} className="border-2 rounded-lg hover:bg-biru hover:text-white">
                     <div className="flex p-8 sm:flex-row flex-col text-center" id={squad.id}>
                       <div className="flex-grow">
-                        <h2 className="text-gray-900 text-lg title-font font-medium mb-3"  id={squad.id}>
+                        <h2 className="font-bold text-lg title-font font-medium mb-3"  id={squad.id}>
                           {squad.squads_name}
                         </h2>
                         <p className="leading-relaxed text-base" id={squad.id}>

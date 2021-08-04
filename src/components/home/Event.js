@@ -3,18 +3,53 @@ import { Link } from "react-router-dom";
 import Slider from "react-slick";
 import { useSelector } from "react-redux";
 import moment from "moment";
+import { useHistory } from "react-router-dom";
 
 const Event = () => {
   const events = useSelector((state) => state.eventReducers.events);
   const settings = {
-    dots: true,
-    infinite: true,
     speed: 500,
     slidesToShow: 2,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 640,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+      // You can unslick at a given breakpoint now by adding:
+      // settings: "unslick"
+      // instead of a settings object
+    ]
   };
+
+  const history = useHistory();
+  const handleMoveDetailEvent = (id) => {
+    history.push("/detail-event", {
+      eventId: id,
+    });
+  };
+
   return (
     <section class="text-gray-600 body-font">
       <div class="container px-4 py-24 mx-auto">
@@ -22,19 +57,19 @@ const Event = () => {
           <h4 className="font-bold text-3xl">Event</h4>
         </div>
         <div className="flex flex-wrap">
-          <div className="md:w-7/12">
+          <div className="md:w-7/12 sm:w-full">
             <Slider {...settings}>
               {events.map((event, index) => {
                 return (
-                  <div className=" p-4 md:w-1/3 sm:mb-0 mb-6" key={index}>
-                    <div className="rounded-lg h-60 w-80 overflow-hidden">
+                  <div className="cursor-pointer lg:w-1/3 md:w-full sm:w-full p-4 sm:mb-0 mb-6" key={index} onClick={() => handleMoveDetailEvent(event.id)}>
+                    <div className="rounded-lg h-60 lg:w-80 md:w-full sm:w-full overflow-hidden">
                       <img
                         alt="content"
                         className="object-cover object-center h-full w-full shadow"
                         src={event.image_event}
                       />
                     </div>
-                    <div className="bg-white rounded-md w-80 shadow-lg">
+                    <div className="bg-white rounded-md lg:w-80 md:w-full sm:w-full shadow-lg">
                       <div className="inline-flex ">
                         <div className="inline-flex ">
                           <div className=" ml-2 mr-4 text-red-100 bg-biru rounded-xl px-6 py-4 mb-4 mt-4 block text-center">
@@ -53,8 +88,8 @@ const Event = () => {
                           </p>
                         </div>
                       </div>
-                      <div className="ml-40">
-                        <span className="block w-40 text-center text-red-100 bg-biru rounded-br-lg rounded-tl-lg px-6 py-1">
+                      <div className="">
+                        <span className="ml-auto block w-40 text-center text-red-100 bg-biru rounded-br-lg rounded-tl-lg px-6 py-1">
                           {new Intl.NumberFormat("id-ID", {
                             style: "currency",
                             currency: "IDR",

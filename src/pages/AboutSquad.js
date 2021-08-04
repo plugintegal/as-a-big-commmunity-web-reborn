@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import Hero from "../components/aboutSquad/Hero";
-import Tech from "../components/aboutSquad/Tech";
 import Theory from "../components/aboutSquad/Theory";
 import Navbar from "../components/Navbar";
 import { withRouter, useLocation } from "react-router-dom";
@@ -30,7 +29,6 @@ console.log(squadDetail);
       ) : (
         <>
           <Hero />
-          <Tech />
           <Theory squadId={squadId} batches={batches} squadDetail={squadDetail} />
           <Footer />
         </>
