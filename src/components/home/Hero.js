@@ -43,7 +43,7 @@ const Hero = () => {
             <img
               className="object-cover object-center object-containt rounded"
               alt="hero"
-              src="/assets/img/Hero.png"
+              src="https://res.cloudinary.com/zada/image/upload/v1628083472/Hero-min_k4j4lu.png"
             />
           </div>
         </div>
@@ -55,14 +55,14 @@ const Hero = () => {
             <img
               className="object-cover object-center rounded -ml-16"
               alt="hero"
-              src="/assets/img/tentang.png"
+              src="https://res.cloudinary.com/zada/image/upload/v1628083471/tentang-min_na5nuh.png"
             />
           </div>
           <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
             <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
               Tentang PLUG-IN
             </h1>
-            <p className="mb-8 text-lg ">
+            <p className="mb-8 mx-auto leading-relaxed text-1xl text-base">
               <span className="font-bold">PLUG-IN</span> adalah suatu organisasi
               atau komunitas studi linux dan pengembangan aplikasi di Politeknik
               Harapan Bersama Tegal. Kami mempunyai tujuan untuk mengenalkan dan
