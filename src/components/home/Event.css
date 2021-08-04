@@ -1,0 +1,15 @@
+@media (max-width: 575.98px) { 
+    .slick-list{
+        width: 380px;
+    }
+}
+@media (max-width: 375px) { 
+    .slick-list{
+        width: 345px;
+    }
+}
+@media (max-width: 320px) { 
+    .slick-list{
+        width: 290px;
+    }
+}

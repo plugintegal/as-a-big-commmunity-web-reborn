@@ -4,6 +4,7 @@ import Slider from "react-slick";
 import { useSelector } from "react-redux";
 import moment from "moment";
 import { useHistory } from "react-router-dom";
+import './Event.css'
 
 const Event = () => {
   const events = useSelector((state) => state.eventReducers.events);
@@ -31,7 +32,7 @@ const Event = () => {
         }
       },
       {
-        breakpoint: 640,
+        breakpoint: 425,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1

@@ -22,7 +22,7 @@ const Hero = () => {
         <img
           className="hidden sm:hidden md:inline-block lg:inline-block object-fit object-center object-containt w-screen ml-22 -mt-10"
           alt="hero"
-          src="/assets/img/SquadWeb.png"
+          src="https://res.cloudinary.com/zada/image/upload/v1628083472/SquadWeb-min_iyrps1.png"
         />
       </div>
     </div>
