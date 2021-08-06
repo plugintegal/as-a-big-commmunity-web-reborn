@@ -19,7 +19,6 @@ const Theory = (props) => {
 
   useEffect(() => {
     if (squadDetail.theories) {
-      console.log(JSON.stringify(squadDetail.theories));
       setTheories(squadDetail.theories);
       setLoadingTheory(false);
     } else {
@@ -80,6 +79,7 @@ const Theory = (props) => {
                   ? batches.map((batch, index) => {
                       return (
                         <div
+                        key={index}
                           className={batch.id === openTab ? "block" : "hidden"}
                         >
                           {!loadingTheory ? (
@@ -91,17 +91,17 @@ const Theory = (props) => {
                               ) : (
                                 theories.map((theory, index) => {
                                   return (
-                                    <div class="flex flex-wrap" key={index}>
-                                      <div class="flex relative pt-6">
-                                        <div class="flex-grow md:pl-8 pl-6 flex items-start flex-col sm:flex-row">
-                                          <div class="flex-shrink-0 mr-24 text-blue-400 font-medium inline-flex text-2xl justify-center">
+                                    <div className="flex flex-wrap" key={index}>
+                                      <div className="flex relative pt-6">
+                                        <div className="flex-grow md:pl-8 pl-6 flex items-start flex-col sm:flex-row">
+                                          <div className="flex-shrink-0 mr-24 text-blue-400 font-medium inline-flex text-2xl justify-center">
                                             <h1>Week {theory.gathering}</h1>
                                           </div>
-                                          <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
-                                            <h2 class="font-medium title-font text-gray-900 mb-1 text-xl">
+                                          <div className="flex-grow sm:pl-6 mt-6 sm:mt-0">
+                                            <h2 className="font-medium title-font text-gray-900 mb-1 text-xl">
                                               {theory.title}
                                             </h2>
-                                            <p class="leading-relaxed">
+                                            <p className="leading-relaxed">
                                               {theory.description}
                                             </p>
                                           </div>
@@ -115,10 +115,10 @@ const Theory = (props) => {
                           ) : (
                             <div className="flex h-auto w-full items-center justify-center">
                               <div className="animate-pules">
-                                <div class="animate-pulse flex space-x-4">
-                                  <div class="rounded-full bg-blue-400 h-2 w-2"></div>
-                                  <div class="rounded-full bg-blue-400 h-2 w-2"></div>
-                                  <div class="rounded-full bg-blue-400 h-2 w-2"></div>
+                                <div className="animate-pulse flex space-x-4">
+                                  <div className="rounded-full bg-blue-400 h-2 w-2"></div>
+                                  <div className="rounded-full bg-blue-400 h-2 w-2"></div>
+                                  <div className="rounded-full bg-blue-400 h-2 w-2"></div>
                                 </div>
                               </div>
                             </div>

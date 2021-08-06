@@ -41,11 +41,11 @@ const AllEventGrid = (props) => {
                       </span>
                     </div>
                   </div>
-                  <div class="flex-grow inline ">
-                    <h2 class="text-gray-900 text-xl title-font font-medium">
+                  <div className="flex-grow inline ">
+                    <h2 className="text-gray-900 text-xl title-font font-medium">
                       {event.event_name}
                     </h2>
-                    <p class="leading-relaxed text-base">{event.speaker}</p>
+                    <p className="leading-relaxed text-base">{event.speaker}</p>
                   </div>
                 </div>
                 <div className="flex mt-7 w-full justify-end">

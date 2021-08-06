@@ -3,7 +3,6 @@ import { useSelector } from "react-redux";
 
 const Hero = () => {
   const squadDetail = useSelector((state) => state.squadReducers.squadDetail);
-  console.log(squadDetail)
   return (
     <div className="flex">
       <section className="text-gray-600 body-font pt-36 sm:pt-28 md:pt-24 lg:pt-24 lg:flex-grow md:w-1/2 flex flex-col pl-0 sm:pl-0 md:pl-0 lg:pl-20">

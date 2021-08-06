@@ -11,9 +11,9 @@ const Blog = () => {
         <div className="mb-3">
           <h4 className="font-bold text-3xl">Blog</h4>
         </div>
-        {blogs.slice(0, 2).map((blog) => {
+        {blogs.slice(0, 2).map((blog, index) => {
           return (
-            <div className="py-5">
+            <div key={index} className="py-5">
               <div className=" w-full lg:max-w-full lg:flex rounded-lg">
                 
                 <div className="bg-white rounded-b lg:rounded-b-none lg:rounded-l-lg p-4 flex flex-col justify-between leading-normal border-t-2 border-l-2 border-b-2 w-full">

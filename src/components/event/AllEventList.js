@@ -14,9 +14,10 @@ const AllEventList = (props) => {
   return (
     <div className="flex flex-wrap">
       {props.events.length > 0 ? (
-        props.events.map((event) => {
+        props.events.map((event, index) => {
           return (
             <div
+            key={index}
               className="md:w-full mt-5 shadow rounded-xl border border-gray-200 cursor-pointer"
               onClick={() => handleMoveDetailEvent(event.id)}
             >

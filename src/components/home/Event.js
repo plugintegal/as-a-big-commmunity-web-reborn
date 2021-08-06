@@ -52,8 +52,8 @@ const Event = () => {
   };
 
   return (
-    <section class="text-gray-600 body-font">
-      <div class="container px-4 py-24 mx-auto">
+    <section className="text-gray-600 body-font">
+      <div className="container px-4 py-24 mx-auto">
         <div>
           <h4 className="font-bold text-3xl">Event</h4>
         </div>
@@ -80,11 +80,11 @@ const Event = () => {
                             </span>
                           </div>
                         </div>
-                        <div class="flex-grow inline mt-6">
-                          <h2 class="text-gray-900 text-lg title-font font-medium">
+                        <div className="flex-grow inline mt-6">
+                          <h2 className="text-gray-900 text-lg title-font font-medium">
                             {event.event_name}
                           </h2>
-                          <p class="leading-relaxed text-base">
+                          <p className="leading-relaxed text-base">
                             {event.speaker}
                           </p>
                         </div>
@@ -108,9 +108,9 @@ const Event = () => {
               Ikuti Event yang kami selenggarakan, dapatkan ilmu yang bermanfaat
               dan tentunya pengalaman
             </p>
-            <div class="p-2 w-full mt-5">
+            <div className="p-2 w-full mt-5">
               <Link to="/event">
-                <button class="flex  text-white bg-biru font-bold border-0 py-1 px-8 focus:outline-none hover:bg-indigo-600 rounded-full text-lg">
+                <button className="flex  text-white bg-biru font-bold border-0 py-1 px-8 focus:outline-none hover:bg-indigo-600 rounded-full text-lg">
                   Lihat Semua Event
                 </button>
               </Link>
