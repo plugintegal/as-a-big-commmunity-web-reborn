@@ -50,8 +50,8 @@ class Allevent extends Component {
   render() {
     return (
       <div>
-        <section class="text-gray-600 body-font pt-20 sm:pt-20 md:pt-20 lg:pt-20">
-          <div class="container px-4 py-10 mx-auto">
+        <section className="text-gray-600 body-font pt-20 sm:pt-20 md:pt-20 lg:pt-20">
+          <div className="container px-4 py-10 mx-auto">
             <h2 className="font-bold text-3xl mb-10">Event</h2>
             <NavbarSort
               tabEventList={this.state.tabEventList}

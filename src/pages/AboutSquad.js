@@ -14,7 +14,6 @@ const AboutSquad = () => {
   const dispatch = useDispatch();
   const batches = useSelector((state) => state.batchReducers.batch);
   const squadDetail = useSelector((state) => state.squadReducers.squadDetail);
-console.log(squadDetail);
   useEffect(() => {
     dispatch(fetchSquadDetail(squadId, null));
     dispatch(fetchBatch());

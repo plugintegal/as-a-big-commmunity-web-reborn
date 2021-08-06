@@ -1,9 +1,10 @@
 import axios from "axios";
+// import env from "env";
 
 export const instance = axios.create({
-  baseURL: "https://as-a-big-community-back-end.herokuapp.com/",
+  baseURL: process.env.REACT_APP_URL
 });
-
 export const instanceMedium = axios.create({
-  baseURL: "https://api.rss2json.com/v1/"
+  baseURL: process.env.REACT_APP_URL_BLOG_MEDIUM
 })
+  

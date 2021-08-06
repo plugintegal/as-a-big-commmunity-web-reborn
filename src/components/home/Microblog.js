@@ -5,8 +5,8 @@ export default class Microblog extends Component {
   render() {
     return (
       <div>
-        <section class="text-gray-600 body-font">
-          <div class="container px-4 py-24 mx-auto">
+        <section className="text-gray-600 body-font">
+          <div className="container px-4 py-24 mx-auto">
             <div className="mb-3">
               <h4 className="font-bold text-3xl text-center">
                 Micro Blog Instagram
@@ -16,19 +16,19 @@ export default class Microblog extends Component {
               <div className="flex flex-wrap -m-4 p-10 mx-auto ">
                 <div className="lg:w-1/4 md:w-1/3 p-4 w-full  ">
                   <div className="border-2 rounded-lg">
-                    <div class="flex rounded-lg border-gray-200 border-opacity-50 p-4 sm:flex-row flex-col">
-                      <div class="w-10 h-10 sm:mr-8 sm:mb-0 mb-4 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
+                    <div className="flex rounded-lg border-gray-200 border-opacity-50 p-4 sm:flex-row flex-col">
+                      <div className="w-10 h-10 sm:mr-8 sm:mb-0 mb-4 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
                         <img
                           className="rounded-full"
                           src="/assets/img/profile.png"
                           alt=""
                         />
                       </div>
-                      <div class="flex-grow -ml-4">
-                        <h2 class="text-gray-900 text-sm font-semibold">
+                      <div className="flex-grow -ml-4">
+                        <h2 className="text-gray-900 text-sm font-semibold">
                           @PluginOfficial
                         </h2>
-                        <p class="leading-relaxed text-xs ">Plugin Tegal</p>
+                        <p className="leading-relaxed text-xs ">Plugin Tegal</p>
                       </div>
                     </div>
                     <Link to="" className="block relative h-48 rounded overflow-hidden">
@@ -48,19 +48,19 @@ export default class Microblog extends Component {
                 </div>
                 <div className="lg:w-1/4 md:w-1/3 p-4 w-full  ">
                   <div className="border-2 rounded-lg">
-                    <div class="flex rounded-lg border-gray-200 border-opacity-50 p-4 sm:flex-row flex-col">
-                      <div class="w-10 h-10 sm:mr-8 sm:mb-0 mb-4 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
+                    <div className="flex rounded-lg border-gray-200 border-opacity-50 p-4 sm:flex-row flex-col">
+                      <div className="w-10 h-10 sm:mr-8 sm:mb-0 mb-4 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
                         <img
                           className="rounded-full"
                           src="/assets/img/profile.png"
                           alt=""
                         />
                       </div>
-                      <div class="flex-grow -ml-4">
-                        <h2 class="text-gray-900 text-sm font-semibold">
+                      <div className="flex-grow -ml-4">
+                        <h2 className="text-gray-900 text-sm font-semibold">
                           @PluginOfficial
                         </h2>
-                        <p class="leading-relaxed text-xs ">Plugin Tegal</p>
+                        <p className="leading-relaxed text-xs ">Plugin Tegal</p>
                       </div>
                     </div>
                     <Link to="" className="block relative h-48 rounded overflow-hidden">
@@ -80,19 +80,19 @@ export default class Microblog extends Component {
                 </div>
                 <div className="lg:w-1/4 md:w-1/3 p-4 w-full  ">
                   <div className="border-2 rounded-lg">
-                    <div class="flex rounded-lg border-gray-200 border-opacity-50 p-4 sm:flex-row flex-col">
-                      <div class="w-10 h-10 sm:mr-8 sm:mb-0 mb-4 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
+                    <div className="flex rounded-lg border-gray-200 border-opacity-50 p-4 sm:flex-row flex-col">
+                      <div className="w-10 h-10 sm:mr-8 sm:mb-0 mb-4 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
                         <img
                           className="rounded-full"
                           src="/assets/img/profile.png"
                           alt=""
                         />
                       </div>
-                      <div class="flex-grow -ml-4">
-                        <h2 class="text-gray-900 text-sm font-semibold">
+                      <div className="flex-grow -ml-4">
+                        <h2 className="text-gray-900 text-sm font-semibold">
                           @PluginOfficial
                         </h2>
-                        <p class="leading-relaxed text-xs ">Plugin Tegal</p>
+                        <p className="leading-relaxed text-xs ">Plugin Tegal</p>
                       </div>
                     </div>
                     <Link to="" className="block relative h-48 rounded overflow-hidden">
@@ -112,19 +112,19 @@ export default class Microblog extends Component {
                 </div>
                 <div className="lg:w-1/4 md:w-1/3 p-4 w-full  ">
                   <div className="border-2 rounded-lg">
-                    <div class="flex rounded-lg border-gray-200 border-opacity-50 p-4 sm:flex-row flex-col">
-                      <div class="w-10 h-10 sm:mr-8 sm:mb-0 mb-4 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
+                    <div className="flex rounded-lg border-gray-200 border-opacity-50 p-4 sm:flex-row flex-col">
+                      <div className="w-10 h-10 sm:mr-8 sm:mb-0 mb-4 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
                         <img
                           className="rounded-full"
                           src="/assets/img/profile.png"
                           alt=""
                         />
                       </div>
-                      <div class="flex-grow -ml-4">
-                        <h2 class="text-gray-900 text-sm font-semibold">
+                      <div className="flex-grow -ml-4">
+                        <h2 className="text-gray-900 text-sm font-semibold">
                           @PluginOfficial
                         </h2>
-                        <p class="leading-relaxed text-xs ">Plugin Tegal</p>
+                        <p className="leading-relaxed text-xs ">Plugin Tegal</p>
                       </div>
                     </div>
                     <Link to="" className="block relative h-48 rounded overflow-hidden">

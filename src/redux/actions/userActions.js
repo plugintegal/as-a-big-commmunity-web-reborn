@@ -116,7 +116,6 @@ export const fetchSquads = () => {
 
 export const fetchSquadDetail = (id, batch_id) => {
   const batch = batch_id == null ? ' ' : batch_id;
-  console.log("squad/"+id + batch)
   return (dispatch) => {
     instance
       .get("squad/"+id + batch)

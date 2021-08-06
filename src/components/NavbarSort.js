@@ -4,15 +4,15 @@ import {FiMenu, FiGrid} from 'react-icons/fi';
 
 export default class NavbarSort extends Component {
   render() {
-    console.log(this.props)
+    // console.log(this.props)
     return (
       <>
         <div className="w-full border-2 h-15 rounded inline-flex">
           <div className="content-center flex flex-wrap items-center">
-            <Link onClick={() => this.props.handleChangeTabEventGrid()}>
+            <Link to='/event' onClick={() => this.props.handleChangeTabEventGrid()}>
               <FiGrid className={(this.props.tabEventGrid ? "text-blue-400 " : " ") + " text-3xl ml-3 hover:text-blue-500"}/>
             </Link>
-            <Link onClick={() => this.props.handleChangeTabEventList()}>
+            <Link to='/event' onClick={() => this.props.handleChangeTabEventList()}>
               <FiMenu className={(this.props.tabEventList ? "text-blue-400 " : " ") + " text-4xl ml-2 hover:text-blue-500"}/>
             </Link>
           </div>
