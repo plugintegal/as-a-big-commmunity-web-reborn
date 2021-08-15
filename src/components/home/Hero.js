@@ -63,7 +63,6 @@ const Hero = () => {
           </div>
         </div>
       </section>
-
       <section className="text-gray-600 body-font lg:-mt-24 sm:mt-20 md:mt-20 flex">
         <div className="w-5/12 left-0">
           <img
@@ -122,10 +121,7 @@ const Hero = () => {
                       id={squad.id}
                     >
                       <div className="flex-grow">
-                        <h2
-                          className="font-bold text-lg title-font font-medium mb-3"
-                          id={squad.id}
-                        >
+                        <h2 className="text-lg title-font font-medium mb-3"  id={squad.id}>
                           {squad.squads_name}
                         </h2>
                         <p className="leading-relaxed text-base" id={squad.id}>
