@@ -4,6 +4,9 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      boxShadow: {
+        event: '0 4px 4px 0 rgba(0, 0, 0, 0.15)'
+      },
       fontFamily: {
         sans: ["Poppins", ...defaultTheme.fontFamily.sans]
       },
