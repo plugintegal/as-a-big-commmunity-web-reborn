@@ -16,7 +16,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <header className={"body-font fixed w-screen z-30 top-0 shadow " + (navbarColor ? "bg-biru text-white" : "bg-white text-grey-300")}>
+      <header className={"body-font fixed w-screen z-30 top-0 " + (navbarColor ? "bg-biru text-white" : "bg-white text-grey-300")}>
         <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
           <Link
             to="/"
