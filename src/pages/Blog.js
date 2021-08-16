@@ -15,7 +15,7 @@ const Blog = () => {
   return (
     <>
       <Navbar />
-      <AllBlog />
+      <AllBlog  className="container"/>
     </>
   );
 };

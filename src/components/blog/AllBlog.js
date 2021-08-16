@@ -47,7 +47,7 @@ const AllBlog = () => {
 
       <section className="">
         {blogData.length > 0 ? (
-          <div className="px-12 -mt-8 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5">
+          <div className=" px-44 -mt-8 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5">
           {blogData.map((blog, index) => {
             return (
               <a
