@@ -95,7 +95,7 @@ const Hero = () => {
             <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">
               PLUG-IN Squad
             </h1>
-            <p className="lg:w-2/3 mx-auto leading-relaxed text-1xl text-base">
+            <p className="lg:w-2/3 mx-auto leading-relaxed text-xl text-base">
               <span className="font-bold">Squad</span> di{" "}
               <span className="font-bold"> PLUG-IN</span> ada 4, masing-masing
               punya fokus dan tujuan tersendiri, dibuatnya squad ini agar
@@ -112,12 +112,12 @@ const Hero = () => {
                   key={index}
                   onClick={handleDetailSquad}
                 >
-                  <div
-                    id={squad.id}
-                    className="border-2 rounded-lg hover:bg-biru hover:text-white"
-                  >
+                  <div className="w-full flex items-center hover:bg-biru rounded-3xl hover:text-white">
+                    <div className="w-64 h-full flex items-center justify-center">
+                      <img src={squad.image} className="object-fill w-full" alt="squad_icon"/>
+                    </div>
                     <div
-                      className="flex p-8 sm:flex-row flex-col text-center"
+                      className="flex p-8 sm:flex-row flex-col"
                       id={squad.id}
                     >
                       <div className="flex-grow">
