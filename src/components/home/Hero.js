@@ -114,7 +114,7 @@ const Hero = () => {
                 >
                   <div className="w-full flex items-center hover:bg-biru rounded-3xl hover:text-white">
                     <div className="w-64 h-full flex items-center justify-center">
-                      <img src={squad.image} className="object-fill w-full"/>
+                      <img src={squad.image} className="object-fill w-full" alt="squad_icon"/>
                     </div>
                     <div
                       className="flex p-8 sm:flex-row flex-col"
