@@ -64,24 +64,6 @@ export const fetchCategories = () => {
   };
 };
 
-export const postParticipant = (data) => {
-  return (dispatch) => {
-    instance
-      .post("participant", data)
-      .then(({ data }) => {
-        alert('Success Daftar')
-        return dispatch({ type: "POST_PARTICIPANT", payload: data.data });
-      })
-      .catch((error) => {
-        alert('Failed Daftar ', error.response)
-        return dispatch({ type: "POST_PARTICIPANT_ERROR", payload: error });
-      })
-      .finally(() => {
-        return dispatch({ type: "POST_PARTICIPANT_LOADING", payload: false });
-      });
-  };
-};
-
 export const fetchBlogs = () => {
   return (dispatch) => {
     instanceMedium
@@ -115,10 +97,10 @@ export const fetchSquads = () => {
 };
 
 export const fetchSquadDetail = (id, batch_id) => {
-  const batch = batch_id == null ? ' ' : batch_id;
+  const batch = batch_id == null ? " " : batch_id;
   return (dispatch) => {
     instance
-      .get("squad/"+id + batch)
+      .get("squad/" + id + batch)
       .then(({ data }) => {
         return dispatch({ type: "FETCH_SQUAD_DETAIL", payload: data.data });
       })
@@ -129,4 +111,42 @@ export const fetchSquadDetail = (id, batch_id) => {
         return dispatch({ type: "FETCH_SQUAD_DETAIL_LOADING", payload: false });
       });
   };
+};
+
+export const postParticipant = (data) => {
+  return (dispatch) => {
+    instance
+      .post("participant", data)
+      .then(({ data }) => {
+        alert("Success Daftar");
+        return dispatch({ type: "POST_PARTICIPANT", payload: data.data });
+      })
+      .catch((error) => {
+        alert("Failed Daftar ", error.response);
+        return dispatch({ type: "POST_PARTICIPANT_ERROR", payload: error });
+      })
+      .finally(() => {
+        return dispatch({ type: "POST_PARTICIPANT_LOADING", payload: false });
+      });
+  };
+};
+
+
+export const postProspectiveMember = (data) => {
+  return (dispatch) => {
+    instance
+      .post("prospective-member", data)
+      .then(({ data }) => {
+        alert("Success Daftar");
+        return dispatch({ type: "POST_PROSPECTIVE_MEMBER", payload: data.data });
+      })
+      .catch((error) => {
+        alert("Failed Daftar ", error.response);
+        console.log(error);
+        return dispatch({ type: "POST_PROSPECTIVE_MEMBER_ERROR", payload: error });
+      })
+      .finally(() => {
+        return dispatch({ type: "POST_PROSPECTIVE_MEMBER_LOADING", payload: false });
+      });
+  }
 }
