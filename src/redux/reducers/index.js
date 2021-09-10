@@ -5,6 +5,7 @@ import { categoryEventReducers } from './categoryEventReducers';
 import { participantReducers } from './participantReducers';
 import { blogReducers } from './blogReducers';
 import { squadReducers } from './squadReducers';
+import { prospectiveMemberReducers } from "./prospectiveMemberReducers";
 
 export default combineReducers({
   eventReducers,
@@ -12,5 +13,6 @@ export default combineReducers({
   categoryEventReducers,
   participantReducers,
   blogReducers,
-  squadReducers
+  squadReducers,
+  prospectiveMemberReducers
 });
