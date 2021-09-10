@@ -72,18 +72,18 @@ const Register = (props) => {
   return (
     <div>
       <section className="text-gray-600 body-font h-screen flex items-center box-border">
-        <div className="flex justify-between w-full mx-10">
-          <div className="w-full h-screen flex justify-center items-center px-16 py-24">
+        <div className="flex flex-wrap justify-between w-full mx-10 pt-56 lg:pt-28 md:pt-48 sm:pt-44">
+          <div className="w-full lg:w-1/2 md:w-full flex justify-center items-center">
             <div className="w-full">
-              <h1 className="lg:text-3xl md:text-2xl sm:text-xl text-blue-400 font-bold">
+              <h1 className="text-blue-400 lg:text-3xl md:text-2xl sm:text-xl font-bold">
                 Registration
               </h1>
-              <p className="mt-5">Please login to continue in our website</p>
+              <p className="mt-3">Please login to continue in our website</p>
               <form
-                className="pt-12 px-8 flex flex-col gap-2 items-center"
+                className="pt-12 px-2 flex flex-col gap-2 items-center"
                 onSubmit={formik.handleSubmit}
               >
-                <div className="w-3/4 border-blue-400 border-2 rounded-full h-14 outline-none px-8 py-6 flex items-center relative">
+                <div className="w-full lg:w-3/4 md:w-3/4 sm:w-full border-blue-400 border-2 rounded-full h-14 outline-none px-8 py-6 flex items-center relative">
                   <div
                     className={
                       "absolute -top-3.5 bg-white px-2  font-bold " +
@@ -112,7 +112,7 @@ const Register = (props) => {
                   </span>
                 ) : null}
 
-                <div className="w-3/4 border-blue-400 border-2 rounded-full h-14 outline-none px-8 py-6 flex items-center relative mt-3">
+                <div className="w-full lg:w-3/4 md:w-3/4 sm:w-full border-blue-400 border-2 rounded-full h-14 outline-none px-8 py-6 flex items-center relative mt-3">
                   <div
                     className={
                       "absolute -top-3.5 bg-white font-bold " +
@@ -140,7 +140,7 @@ const Register = (props) => {
                     {formik.errors.email}
                   </span>
                 ) : null}
-                <div className="w-3/4 border-blue-400 border-2 rounded-full h-14 outline-none px-8 py-6 flex items-center relative mt-3">
+                <div className="w-full lg:w-3/4 md:w-3/4 sm:w-full border-blue-400 border-2 rounded-full h-14 outline-none px-8 py-6 flex items-center relative mt-3">
                   <div
                     className={
                       "absolute -top-3.5 bg-white font-bold " +
@@ -169,7 +169,7 @@ const Register = (props) => {
                   </span>
                 ) : null}
 
-                <div className="w-3/4 border-blue-400 border-2 rounded-full h-14 outline-none px-8 py-6 flex items-center relative mt-3">
+                <div className="w-full lg:w-3/4 md:w-3/4 sm:w-full border-blue-400 border-2 rounded-full h-14 outline-none px-8 py-6 flex items-center relative mt-3">
                   <div
                     className={
                       "absolute -top-3.5 bg-white font-bold " +
@@ -200,7 +200,7 @@ const Register = (props) => {
                   </span>
                 ) : null}
 
-                <div className="w-3/4 border-blue-400 border-2 rounded-full h-14 outline-none px-8 py-6 flex items-center relative mt-3">
+                <div className="w-full lg:w-3/4 md:w-3/4 sm:w-full border-blue-400 border-2 rounded-full h-14 outline-none px-8 py-6 flex items-center relative mt-3">
                   <div
                     className={
                       "absolute -top-3.5 bg-white font-bold " +
@@ -232,7 +232,7 @@ const Register = (props) => {
                   </span>
                 ) : null}
 
-                <div className="w-3/4 border-blue-400 border-2 rounded-full h-14 outline-none px-8 py-6 flex items-center relative mt-3">
+                <div className="w-full lg:w-3/4 md:w-3/4 sm:w-full border-blue-400 border-2 rounded-full h-14 outline-none px-8 py-6 flex items-center relative mt-3">
                   <div
                     className={
                       "absolute -top-3.5 bg-white font-bold " +
@@ -264,7 +264,7 @@ const Register = (props) => {
                   </span>
                 ) : null}
 
-                <div className="w-3/4 border-blue-400 border-2 rounded-full h-14 outline-none px-8 py-6 flex items-center relative mt-3">
+                <div className="w-full lg:w-3/4 md:w-3/4 sm:w-full border-blue-400 border-2 rounded-full h-14 outline-none px-8 py-6 flex items-center relative mt-3">
                   <div
                     className={
                       "absolute -top-3.5 bg-white font-bold " +
@@ -301,7 +301,7 @@ const Register = (props) => {
                     {formik.errors.gender}
                   </span>
                 ) : null}
-                <div className="flex justify-center items-center w-3/4 pt-10">
+                <div className="flex justify-center items-center w-full lg:w-3/4 md:w-3/4 sm:w-full pt-10">
                   <button
                     type="submit"
                     className="w-full py-4 text-center bg-blue-400 text-white rounded-full outline-none flex justify-center"
@@ -313,7 +313,7 @@ const Register = (props) => {
               </form>
             </div>
           </div>
-          <div className="w-full flex relative py-8">
+          <div className="w-full lg:w-1/2 md:w-full hidden lg:flex md:hidden sm:hidden relative py-8">
             <div className="bg-blue-500 w-5/6 h-full rounded-3xl static self-center ml-auto flex justify-center flex-col">
               <div className="w-1/2 h-1/2 -mt-16 self-end mr-24">
                 <h1 className="text-5xl text-white font-bold">Plugin</h1>
