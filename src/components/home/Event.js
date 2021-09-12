@@ -63,7 +63,7 @@ const Event = () => {
               {events.map((event, index) => {
                 return (
                   <div className="cursor-pointer lg:w-6/12 md:w-full sm:w-full sm:mb-0 mb-6 py-3 px-2 mt-8" key={index} onClick={() => handleMoveDetailEvent(event.id)}>
-                    <div className="rounded-lg h-60 lg:w-96 shadow-event md:w-full sm:w-full overflow-hidden z-20 shadow-lg -mb-3">
+                    <div className="rounded-lg h-60 lg:w-96 shadow-event md:w-full sm:w-full overflow-hidden z-20 -mb-3">
                       <img
                         alt="content"
                         className="object-fill object-center h-full w-full"
