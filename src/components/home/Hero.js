@@ -48,7 +48,7 @@ const Hero = () => {
             </div>
 
             <div className="w-full">
-              <p className="mb-8 leading-relaxed text-3xl tracking-wide font-medium">
+              <p className="mb-8 leading-relaxed lg:text-3xl md:text-xl tracking-wide font-medium">
                 komunitas linux dan pengembangan aplikasi di Politeknik Harapan
                 Bersama Tegal.
               </p>
@@ -72,7 +72,7 @@ const Hero = () => {
           />
         </div>
         <div className="lg:w-7/12 md:w-3/4 sm:w-full lg:p-32 md:p-10 sm:p-5 flex flex-col items-start justify-center">
-          <h1 className="title-font text-5xl font-bold text-gray-900 tracking-wider px-5">
+          <h1 className="title-font lg:text-5xl text-2xl font-bold text-gray-900 tracking-wider px-5">
             Tentang Plugin
           </h1>
           <div className="w-auto my-3">
@@ -104,26 +104,29 @@ const Hero = () => {
           </div>
         </div>
         <div className="container px-5 py-6 mx-auto flex flex-wrap">
-          <div className="flex flex-wrap -m-4">
+          <div className="flex flex-wrap ">
             {squads.map((squad, index) => {
               return (
                 <div
-                  className="p-4 lg:w-1/2 md:w-full cursor-pointer"
+                  className="lg:w-1/2 md:w-full cursor-pointer"
                   key={index}
                   onClick={handleDetailSquad}
                 >
                   <div className="w-full flex items-center hover:bg-biru rounded-3xl hover:text-white">
-                    <div className="w-64 h-full flex items-center justify-center">
-                      <img src={squad.image} className="object-fill w-full" alt="squad_icon"/>
+                    <div className="w-64 h-full hidden lg:flex md:hidden items-center justify-center">
+                      <img src={squad.image} className="object-fill w-full" alt="squad_icon" />
                     </div>
                     <div
-                      className="flex p-8 sm:flex-row flex-col"
+                      className="flex sm:flex-row flex-col py-5"
                       id={squad.id}
                     >
                       <div className="flex-grow">
-                        <h2 className="text-lg title-font font-medium mb-3"  id={squad.id}>
+                        <h2 className="text-xl title-font font-medium mb-3" id={squad.id}>
                           {squad.squads_name}
                         </h2>
+                        <div className="w-60 h-full items-center justify-center flex lg:hidden md:flex">
+                          <img src={squad.image} className="object-fill w-full" alt="squad_icon" />
+                        </div>
                         <p className="leading-relaxed text-base" id={squad.id}>
                           {squad.description}
                         </p>
