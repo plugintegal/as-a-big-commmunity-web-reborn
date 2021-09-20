@@ -32,7 +32,7 @@ const Navbar = () => {
             {/* <p className="mr-5 hover:text-gray-900 hover:font-bold">WiyataOs</p> */}
             <Link to="/blog" className="mr-5 hover:text-gray-900">Blog</Link>
             <Link to="/event" className="mr-5 hover:text-gray-900 ">Event</Link>
-            <Link to="/registration-member" className="mr-5 hover:text-gray-900 ">Registration Member</Link>
+            <Link to="/oprec" className="mr-5 hover:text-gray-900 ">Registration Member</Link>
             {/* <p className="mr-5 hover:text-gray-900">Achivment</p> */}
             {/* <Link to="/registration-member" className=" hover:text-gray-900">Registration Member</Link> */}
           </nav>

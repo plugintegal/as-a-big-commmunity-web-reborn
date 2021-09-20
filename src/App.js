@@ -11,6 +11,7 @@ import Register from "./pages/Register";
 import PaymentEvent from "./pages/PaymentEvent";
 import RegistrationEvent from "./pages/RegistrationEvent";
 import RegistrationMember from "./pages/RegistrationMember";
+import HandleRegister from "./components/registrationMember/HandleRegister";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
       <Route path="/event" exact component={Event} />
       <Route path="/login" exact component={Login} />
       <Route path="/register" exact component={Register} />
+      <Route path="/oprec" exact component={HandleRegister} />
     </Router>
   );
 }
