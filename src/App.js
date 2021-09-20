@@ -6,11 +6,9 @@ import DetailEvents from "./pages/DetailEvents";
 import Event from "./pages/Event";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
-import Register from "./pages/Register";
 
 import PaymentEvent from "./pages/PaymentEvent";
 import RegistrationEvent from "./pages/RegistrationEvent";
-import RegistrationMember from "./pages/RegistrationMember";
 import HandleRegister from "./components/registrationMember/HandleRegister";
 
 function App() {
@@ -20,13 +18,13 @@ function App() {
       <Route path="/blog" exact component={Blog} />
       <Route path="/detail-event" exact component={DetailEvents} />
       <Route path="/about-squad" exact component={AboutSquad} />
-      <Route path="/registration-member" exact component={RegistrationMember} />
+      {/* <Route path="/registration-member" exact component={RegistrationMember} /> */}
       <Route path="/registration-event" exact component={RegistrationEvent} />
       <Route path="/payment-event" exact component={PaymentEvent} />
 
       <Route path="/event" exact component={Event} />
       <Route path="/login" exact component={Login} />
-      <Route path="/register" exact component={Register} />
+      {/* <Route path="/register" exact component={Register} /> */}
       <Route path="/oprec" exact component={HandleRegister} />
     </Router>
   );
