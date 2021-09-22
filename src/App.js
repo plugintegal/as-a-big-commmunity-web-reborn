@@ -8,6 +8,8 @@ import Home from "./pages/Home";
 import Login from "./pages/Login";
 
 import PaymentEvent from "./pages/PaymentEvent";
+import Register from "./pages/Register";
+import RegistrationMember from "./pages/RegistrationMember";
 import RegistrationEvent from "./pages/RegistrationEvent";
 import HandleRegister from "./components/registrationMember/HandleRegister";
 
@@ -18,13 +20,13 @@ function App() {
       <Route path="/blog" exact component={Blog} />
       <Route path="/detail-event" exact component={DetailEvents} />
       <Route path="/about-squad" exact component={AboutSquad} />
-      {/* <Route path="/registration-member" exact component={RegistrationMember} /> */}
+      <Route path="/registration-member" exact component={RegistrationMember} />
       <Route path="/registration-event" exact component={RegistrationEvent} />
       <Route path="/payment-event" exact component={PaymentEvent} />
 
       <Route path="/event" exact component={Event} />
       <Route path="/login" exact component={Login} />
-      {/* <Route path="/register" exact component={Register} /> */}
+      <Route path="/register" exact component={Register} />
       <Route path="/oprec" exact component={HandleRegister} />
     </Router>
   );
